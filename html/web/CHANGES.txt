@@ -3,6 +3,33 @@ Release notes for Alexandria (http://alexandria.xtec.cat)
 More information on each of the fixes can be found in the project 
 development home at https://projectes.lafarga.cat/projects/alexandria/
 
+Changes in progress
+---------------------------------------------------------------------------------------
+- Upgrade to the last Agora version that includes:
+   - Updated translations
+   - Upgrade some module versions
+   - Fix MDL-47597 Inform users to use https on callback url on Flickr repository
+   - Fix MDL-47581 Force box.net repository work with https
+   - Fix MDL-31679 gradereport_grader: Add a horizontal scroll bar to the top of the grader report
+   - Duplicated assignmetns script now inform the coursemoduleid
+   - Styling grader
+   - CONTRIB-4891 Questionnaire YES/NO questions results not properly shown
+   - First version of database check script
+   - Format simple. Solved bug deleting images by module deletion handler
+   - Added autodetection cron for adware and some improvements
+   - Changed Oauth server params to Server menu
+   - Recovered log database fails function
+   - Repaired Moodle APP
+   - MDL-47581 Force box.net repository work with https
+   - Updated marsupial modules
+   - Enable webservice mobile settings for all admins
+   - Do not even try to send mails to .invalid domain
+   - Set default value on upload users tool to an invalid domain
+- Some changes does not apply Alexandria
+   - More intelligent purge cache
+   - Fixed linguistic SQL sorting
+
+
 Changes 14.10.02
 ---------------------------------------------------------------------------------------
 - Upgrade to Moodle 2.6.4
