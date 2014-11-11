@@ -166,7 +166,7 @@ $string['criteria_descr_short2'] = '授与者「 {$a} 」:';
 $string['criteria_descr_short4'] = 'コースを完了する';
 $string['criteria_descr_short5'] = '完了対象「 {$a} 」:';
 $string['criteria_descr_short6'] = '完了対象「 {$a} 」:';
-$string['criteria_descr_single_1'] = '以下の活動が完了しました:';
+$string['criteria_descr_single_1'] = '以下の活動を完了する必要があります:';
 $string['criteria_descr_single_2'] = 'このバッジは次のロールのユーザによって授与する必要があります:';
 $string['criteria_descr_single_4'] = 'ユーザはコースを完了する必要がある';
 $string['criteria_descr_single_5'] = '以下のコースを完了する必要があります:';
@@ -210,7 +210,7 @@ $string['error:cannotact'] = 'バッジを有効にできません。';
 $string['error:cannotawardbadge'] = 'ユーザにバッジを授与できません。';
 $string['error:clone'] = 'バッジを複製できません。';
 $string['error:connectionunknownreason'] = '接続に成功しませんでしたが、理由は与えられていません。';
-$string['error:duplicatename'] = 'そのような名称のバッジはシステム内に存在しません。';
+$string['error:duplicatename'] = '当該名称のバッジはすでにシステム内に登録されています。';
 $string['error:externalbadgedoesntexist'] = 'バッジが見つかりませんでした。';
 $string['error:guestuseraccess'] = '現在、あなたはユーザアクセスを使用しています。バッジを閲覧するには、あなたのユーザアカウントでログインする必要があります。';
 $string['error:invalidbadgeurl'] = '無効なバッジ発行者URLフォーマットです。';
@@ -274,7 +274,7 @@ $string['makepublic'] = '公開する';
 $string['managebadges'] = 'バッジを管理する';
 $string['message'] = 'メッセージ本文';
 $string['messagebody'] = '<p>あなたにバッジ「 %badgename% 」が授与されました!</p>
-<p>このバッジに関する詳細情報は、%badgelink% をご覧ください。</p>
+<p>このバッジに関する詳細情報は %badgelink% をご覧ください。</p>
 <p>あなたは「 {$a} 」ページにて、バッジを管理およびダウンロードすることができます。</p>';
 $string['messagesubject'] = 'おめでとうございます! あなたはバッジを取得しました!';
 $string['method'] = 'このクライテリアは以下の場合に完了します ...';

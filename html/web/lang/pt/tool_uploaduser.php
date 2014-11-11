@@ -44,7 +44,7 @@ $string['uploadpicture_cannotmovezip'] = 'Não é possível mover o arquivo zip 
 $string['uploadpicture_cannotprocessdir'] = 'Não pode processar arquivos descompactados.';
 $string['uploadpicture_cannotsave'] = 'Não é possível guardar imagens para o utilizador {$a}. Verifique o ficheiro da imagem original.';
 $string['uploadpicture_cannotunzip'] = 'Não pode descompactar ficheiros de imagens.';
-$string['uploadpicture_invalidfilename'] = 'O ficheiro da imagem {$a} tem carateres inválidos em seu nome. Saltar.';
+$string['uploadpicture_invalidfilename'] = 'O ficheiro da imagem {$a} tem caracteres inválidos no seu nome. Ignorar.';
 $string['uploadpicture_overwrite'] = 'Substituir as imagens existentes dos utilizadores?';
 $string['uploadpictures'] = 'Carregar imagens de utilizadores';
 $string['uploadpictures_help'] = 'As imagens dos utilizadores podem ser carregadas como um arquivo zip ou um ficheiro de imagem.Os ficheiros de imagem devem ser nomeados com extensão, por exemplo, user1234.jpg para um utilizador com o nome de utilizador user1234.';
@@ -61,7 +61,7 @@ $string['uploadusers_help'] = 'Os utilizadores podem ser carregados (e opcionalm
 * Os nomes dos campos obrigatórios são username, password, firstname, lastname, email';
 $string['uploaduserspreview'] = 'Pré-visualizar utilizadores carregados';
 $string['uploadusersresult'] = 'Resultados dos utilizadores carregados';
-$string['uploaduser:uploaduserpictures'] = 'Fazer upload de imagens de utilizador';
+$string['uploaduser:uploaduserpictures'] = 'Carregar imagens de utilizador';
 $string['useraccountupdated'] = 'Utilizador atualizado';
 $string['useraccountuptodate'] = 'Sem alterações';
 $string['userdeleted'] = 'Utilizador apagados';

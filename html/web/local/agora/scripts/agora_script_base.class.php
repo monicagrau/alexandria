@@ -5,9 +5,11 @@ class agora_script_base{
 	public $title = 'No title';
 	public $info = "";
 	public $cron = false;
+	public $cli = false;
+	public $api = true;
 	protected $test = true;
 
-	protected function params() {
+	public function params() {
 		$params = array();
 		return $params;
 	}
@@ -22,12 +24,32 @@ class agora_script_base{
 		$this->form($params);
 		if ($action == 'test') {
 			echo $OUTPUT->notification('Testing...');
+			\core\session\manager::write_close();
 			return $this->_execute($params, false);
 		} else if ($action == 'execute' && $this->can_be_executed($params)) {
 			echo $OUTPUT->notification('Executing!!');
+			\core\session\manager::write_close();
 			return $this->_execute($params);
 		}
 		return false;
+	}
+
+	function execute_cli() {
+		if (!$this->cli) {
+			mtrace('Script not enabled for cli execution');
+			return false;
+		}
+
+		$starttime = microtime();
+
+		mtrace($this->title);
+
+		list($params, $unrecognized) = cli_get_params($this->params());
+		$return  = $this->_execute($params);
+
+		$difftime = microtime_diff($starttime, microtime());
+		mtrace("\n"."Execution took ".$difftime." seconds");
+		return $return;
 	}
 
 	function execute($params) {
@@ -92,6 +114,7 @@ class agora_script_base{
 	}
 
 	function is_visible() {
+		global $USER;
 		if (is_agora() && !is_xtecadmin()) {
 			return false;
         }

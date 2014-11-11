@@ -27,20 +27,24 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['activemessages'] = 'Active messages';
 $string['add'] = 'Add';
+$string['addmoredelays'] = 'Add {no} more delays';
 $string['add_phpdoc'] = 'Add PHP doc comments';
 $string['add_phpdocdesc'] = 'Add PHP doc comments to php, js and css files.';
 $string['addquiztoreader'] = 'Add course quizzes to reader quizzes';
+$string['adjoiningcomputers'] = 'On adjoining computers';
 $string['adjustscores'] = 'Adjust scores';
 $string['adminarea'] = 'Admin area';
 $string['all'] = 'All';
 $string['allbooks'] = 'All books available to the Reader module';
 $string['alldone'] = 'All done';
 $string['allgroups'] = 'All Groups';
+$string['allgroupsandlevels'] = 'All groups and levels';
 $string['alllevels'] = 'All levels';
 $string['allparticipants'] = 'All participants';
 $string['allterms'] = 'all terms';
 $string['alreadyclosed'] = 'Sorry, this activity is no longer available. It closed {$a}.';
 $string['andnextmore'] = '{$a} more';
+$string['anywhere'] = 'Anywhere';
 $string['arrange'] = 'Arrange';
 $string['assignpointsbookshavenoquizzes'] = 'Award points for books that have no quizzes';
 $string['atlevel'] = 'at Level';
@@ -48,7 +52,6 @@ $string['atlevelbeforebeingpromoted'] = 'at level {$a} before being promoted.';
 $string['attemptedbooks'] = 'Only books that have been attempted on this site';
 $string['attempts'] = 'Attempts';
 $string['attemptscoremanagement'] = 'Attempt and score management';
-$string['attemptsofday'] = 'Quiz for days';
 $string['availableitems'] = 'Available items';
 $string['averageduration'] = 'Average duration';
 $string['averageduration_help'] = 'The average duration of attempts at Reader quizzes';
@@ -66,14 +69,25 @@ $string['averagewordsallterms'] = 'Average words all terms';
 $string['averagewordsallterms_help'] = 'The average number of words awarded per student all terms';
 $string['averagewordsthisterm'] = 'Average words this term';
 $string['averagewordsthisterm_help'] = 'The average number of words awarded per student this term';
-$string['awardbookpoints'] = 'Give credit for books that have no quizzes';
+$string['awardbookpoints'] = 'Give credit for books';
 $string['awardextrapoints'] = 'Award extra points to selected students';
 $string['best'] = 'Best';
 $string['book'] = 'Book';
 $string['bookadded'] = 'Book added: {$a}';
 $string['bookcovers'] = 'Show book covers';
+$string['bookcovers_help'] = '**No**
+: Do NOT show the book covers on the main page of this Reader activity.
+
+**Yes**
+: Show the book covers on the main page of this Reader activity.';
 $string['bookdifficulty'] = 'Book difficulty';
 $string['bookeditdetails'] = 'Edit book details';
+$string['bookinstances'] = 'Custom book data';
+$string['bookinstances_help'] = '**No**
+: This Reader activity will use only the standard Reader book data such as word count and reading level
+
+**Yes**
+: This Reader activity will use custom values for Reader book data. Note that enabling this option will cause some extra load on your web server.';
 $string['booklevelmanagement'] = 'Book & Level Management';
 $string['booknotadded'] = 'Book NOT added: {$a}';
 $string['booknotfound'] = 'Book not found {$a}';
@@ -92,7 +106,7 @@ $string['bookswithoutquizzes'] = 'Books without quizzes';
 $string['bookswithquizzes'] = 'Books with quizzes';
 $string['booktitle'] = 'Book title';
 $string['bookupdated'] = 'Book updated: {$a}';
-$string['butyoumaytakequizzes'] = 'But you may take quizzes on books at any level.';
+$string['butyoumaytakequizzes'] = 'You may take quizzes on books at any level.';
 $string['cannotcreatecourse'] = 'Sorry, the download cannot proceed because you do not have permission to create a new course or edit the current course.';
 $string['cannotdownloadata'] = 'Sorry, there was a problem downloading data for the Reader module';
 $string['changeallstoppromoto'] = 'Change all Stop Promo to';
@@ -106,42 +120,67 @@ $string['changepublisherfrom'] = 'Change publisher name from';
 $string['changereaderlevel'] = 'Change Reading Level, Length or Word Count';
 $string['changestartlevel'] = 'Change all start level to';
 $string['cheated'] = 'Cheated';
-$string['cheated_message'] = 'Cheated notice';
+$string['cheatedmessage'] = 'Cheated message';
+$string['cheatedmessagedefault'] = 'We are sorry to say that the MoodleReader program has discovered that you have probably cheated when you took the above quiz. "Cheating" means that you either helped another person to take the quiz or that you received help from someone else to take the quiz. Both people have been marked "cheated".
+
+Sometimes the computer makes mistakes. If you honestly did not receive help and did not help someone else, then please inform your teacher and your points will be restored.
+
+--The MoodleReader Module Manager';
+$string['cheatedmessage_help'] = 'This message wil be sent to students who are judged by the Reader module to have cheated.';
 $string['cheatedshort'] = 'C';
 $string['cheatsheet'] = 'Cheat sheet';
-$string['checkbox'] = 'Use checkboxes in student report';
+$string['checkbox'] = 'Show checkboxes';
+$string['checkbox_help'] = '**No**
+: Do NOT show checkboxes on the teacher reports pages.
+
+**Yes**
+: Show checkboxes on the teacher report pages.';
+$string['checkcheating'] = 'Check for cheating';
+$string['checkcheating_help'] = 'This setting specifies whether or not IP address should be checked when students attempt Reader quizzes.
+
+**Off**
+: IP addresses will not be checked
+
+**Anywhere**
+: If two students start the same quiz at a similar time and both pass, they will be judged by the Reader module to have cheated.
+
+**On adjoining computers**
+: If two students start the same quiz at a similar time from a similar IP address and both pass, they will be judged by the Reader module to have cheated.';
 $string['check_email'] = 'Check email';
 $string['check_emaildesc'] = 'Send two test emails to the gueststudent user, one via Moodle mail and one via PHP mail.';
 $string['checkonlythiscourse'] = 'Check only this course';
 $string['checksuspiciousactivity'] = 'Check logs for suspicious activity';
+$string['clearedmessage'] = 'Cleared message';
+$string['clearedmessagedefault'] = 'We are happy to inform you that your points for the above quiz have been restored. We apologize for the mistake!
+
+--The MoodleReader Module Manager';
+$string['clearedmessage_help'] = 'This message is sent to students who were judged by the Reader module to have cheated but where later cleared by the teacher.';
 $string['clicktocontinue'] = 'Click here to continue';
 $string['complete'] = 'Complete';
-$string['configattemptsofday'] = '';
 $string['configbookcovers'] = '';
-$string['configcheated_message'] = '';
+$string['configcheatedmessage'] = '';
 $string['configcheckbox'] = '';
+$string['configclearedmessage'] = '';
 $string['configeditingteacherrole'] = '';
 $string['configintro'] = 'The values you set here define the default values that are used in the settings form when you create a new Reader activity.
 
 You can also configure which reader settings are considered advanced.';
 $string['configkeepoldquizzes'] = '';
 $string['configlevelcheck'] = '';
-$string['confignot_cheated_message'] = '';
-$string['configpercentforreading'] = '';
-$string['configpointreport'] = '';
+$string['configminpassgrade'] = '';
+$string['confignextlevel'] = '';
+$string['confignotifycheating'] = '';
+$string['configprevlevel'] = '';
 $string['configquestionmark'] = '';
-$string['configquiznextlevel'] = '';
-$string['configquizonnextlevel'] = '';
-$string['configquizpreviouslevel'] = '';
-$string['configquiztimeout'] = '';
-$string['configreportwordspoints'] = '';
-$string['configsendmessagesaboutcheating'] = '';
-$string['configserverlink'] = '';
-$string['configserverlogin'] = '';
+$string['configquiztimelimit'] = '';
 $string['configserverpassword'] = '';
+$string['configserverurl'] = '';
+$string['configserverusername'] = '';
+$string['configshowprogressbar'] = '';
+$string['configthislevel'] = '';
 $string['configupdate'] = '';
 $string['configusecourse'] = '';
-$string['configwordsprogressbar'] = '';
+$string['configwordsorpoints'] = '';
 $string['confirmdeleteattempts'] = 'Do you really want to delete these attempts?';
 $string['countactive'] = 'Active students';
 $string['countactive_help'] = 'The number of students who have taken at least one Reader quiz';
@@ -161,6 +200,7 @@ $string['dataalldownloaded'] = 'data for all {$a} book(s) has been downloaded';
 $string['datasomeavailable'] = 'data for {$a->new} out of {$a->all} book(s) is available';
 $string['defaultcategoryname'] = 'Reader Quizzes';
 $string['defaultcoursename'] = 'Reader Quizzes';
+$string['defaultdelay'] = 'Default delay';
 $string['defaultquestioncategoryinfo'] = '{$a->category} questions for {$a->quiz}';
 $string['definelogindetails'] = 'Please define login details: {$a}';
 $string['delay'] = 'Delay';
@@ -192,6 +232,7 @@ $string['edit'] = 'Edit';
 $string['editingteacherrole'] = 'Use Editing Teacher role';
 $string['editquiztoreader'] = 'Delete quizzes';
 $string['error'] = 'Error: {$a}';
+$string['errorsfound'] = 'Errors found';
 $string['eventattemptadded'] = 'eventattempt added';
 $string['eventattemptadded_desc'] = 'The user with id "{$a->userid}" has attempt_added for the reader with the course module id "{$a->contextinstanceid}"';
 $string['eventattemptdeleted'] = 'eventattempt deleted';
@@ -336,6 +377,14 @@ $string['fullreportquiztoreader'] = 'Full Report by Student';
 $string['goal'] = 'Goal';
 $string['hidden'] = 'Hidden';
 $string['ifimagealreadyexists'] = 'If image already exists in images folder (name)';
+$string['ignoredate'] = 'Term start date';
+$string['ignoredate_help'] = 'The date of the start of the current term.
+
+Any attempts at Reader quizzes taken before this date will not be included in the report totals for this the current term.
+
+However, attempts in previous terms are not ignored completely. They will be included in the report totals for "All terms".
+
+Also, please note that students can never retake Reader quizzes, including those taken in previous terms, unless the teacher deletes the previous attempt.';
 $string['image'] = 'Image';
 $string['imageadded'] = 'Image added: {$a}';
 $string['import'] = 'Import';
@@ -351,14 +400,22 @@ $string['incorrectbooksreadinpreviousterms'] = 'View failed quizzes';
 $string['install_quizzes'] = 'Install Quizzes';
 $string['isgreaterthan'] = 'is greater than';
 $string['islessthan'] = 'is less than';
+$string['itemsdownloaded'] = '{$a} items dowloaded';
 $string['keepoldquizzes'] = 'Keep old quizzes';
 $string['lastupdatedtime'] = 'The quizzes on this site were last updated on {$a}.  Do you want to update the site now?';
 $string['lengthex11'] = 'Length (Ex. 1.1)';
 $string['level'] = 'Level';
-$string['levelcheck'] = 'Use the quiz taking level restriction feature';
+$string['levelcheck'] = 'Restrict reading level';
+$string['levelcheck_help'] = '**No**
+: Students will always be allowed to take Reader quizzes for books at any reading level.
+
+**Yes**
+: Students will only be allowed to take Reader quizzes for books at or near their current reading level. The number of quizzes that students are allowed to take is specified in the settings on this page for "Quizzes at current/previous/next level"';
+$string['leveldelay'] = 'Level {$a} delay';
 $string['leveli'] = 'Level {$a}';
 $string['levels'] = 'Levels';
 $string['likebook'] = 'How did you like this book?';
+$string['mainpagesettings'] = 'Main page settings';
 $string['makenewquizzesavailable'] = 'Make new quizzes available in this course only';
 $string['makenewquizzesavailable2'] = 'Make new quizzes available in all courses on this site [default]';
 $string['massrename'] = 'Mass changes';
@@ -368,6 +425,10 @@ $string['menu'] = 'Menu';
 $string['mergingtables'] = 'Merging tables: {$a->old} into {$a->new}';
 $string['messagefromyourteacher'] = 'Message from your teacher';
 $string['min'] = 'Greater than or equal to';
+$string['minpassgrade'] = 'Minimum pass grade';
+$string['minpassgrade_help'] = 'The minimum pass grade, as a percentage, for quizzes in this Reader activity.
+
+Attempts with percentage grade lower than this value will be marked as failed.';
 $string['modulename'] = 'Reader';
 $string['modulename_help'] = 'The Reader module allows teachers to set reading goals for students, and allows students to demonstrate they have achieved the specified reading goals.';
 $string['modulename_link'] = 'mod/reader/view';
@@ -378,6 +439,8 @@ $string['needtocheckupdates'] = 'This site has not checked for quiz updates in (
 $string['newreadinggoal'] = 'New reading goal';
 $string['newreadinglevel'] = 'New reading level';
 $string['newsetting'] = 'New value for this setting';
+$string['nextlevel'] = 'Quizzes at next level';
+$string['nextlevel_help'] = 'The number of quizzes that a student may take from the next reading level, i.e. the reading level that is just above their current reading level. Note that these quizzes do NOT count toward promotion.';
 $string['noaction'] = 'Take no action';
 $string['nobooksfound'] = 'No books found';
 $string['nobooksinlist'] = 'No books found for your reading level';
@@ -390,10 +453,12 @@ $string['noquizzesfound'] = 'No quizzes found';
 $string['noreaders'] = 'No Reader activities found in this course';
 $string['normalmode'] = 'Normal';
 $string['nosearchresults'] = 'No books matching your search are available';
-$string['not_cheated_message'] = 'Points restored notice';
 $string['nothavepermissioncreateinstance'] = 'Sorry you do not have permission to do this';
+$string['notifycheating'] = 'Notify cheats';
+$string['notifycheating_help'] = 'If this settings enabled, then students that are judged to have cheated on attempts at Reader quizzes will be sent the "Cheated message" below';
 $string['notopenyet'] = 'Sorry, this activity is not available yet. It will open {$a}.';
 $string['numberofextrapoints'] = 'Number of extra points';
+$string['off'] = 'Off';
 $string['onlybookswithmorethan'] = 'Only books with more than';
 $string['pagesettings'] = 'Page settings';
 $string['passed'] = 'Passed';
@@ -402,7 +467,6 @@ $string['passfailattempts'] = 'Update the pass/fail setting for selected attempt
 $string['passwords_list'] = 'Passwords list';
 $string['percentactive'] = 'Active percent';
 $string['percentactive_help'] = 'The percentage of students who have taken at least one Reader quiz';
-$string['percentforreading'] = 'Percent correct for making the book as read. (%)';
 $string['percentinactive'] = 'Inactive percent';
 $string['percentinactive_help'] = 'The percentage of students who have not taken any Reader quizzes';
 $string['pleaseaskyourinstructor'] = 'Please ask your instructor to move your level up if it is too easy for you.';
@@ -412,31 +476,42 @@ $string['pleasespecifyyourclassgroup'] = 'Please specify your class group or sea
 $string['pleasewait'] = 'Please wait';
 $string['pluginadministration'] = 'Reader Administration';
 $string['pluginname'] = 'Reader';
-$string['pointreport'] = 'Full point report';
 $string['points'] = 'Points';
+$string['popup'] = 'Use "secure" window';
+$string['popup_help'] = 'If "Yes" is selected,
+
+* The quiz will only start if the student has a JavaScript-enabled web-browser
+* The quiz appears in a full screen popup window that covers all the other windows and has no navigation controls
+* Students are prevented, as far as is possible, from using facilities like copy and paste';
+$string['prevlevel'] = 'Quizzes at previous level';
+$string['prevlevel_help'] = 'The number of quizzes that a student may take from the previous reading level, i.e. the reading level that is just below their current reading level. Note that these quizzes do NOT count toward promotion.';
 $string['print_cheatsheet'] = 'Print cheatsheet';
 $string['print_cheatsheetdesc'] = 'Display the answers for any Reader quiz.';
 $string['private'] = 'Private';
 $string['process_addquestion'] = '<b>Add questions to quiz {$a}.</b><br />';
 $string['process_courseadded'] = '<b>Course added.</b><br />';
+$string['promotionsettings'] = 'Promotion settings';
 $string['publisher'] = 'Publisher';
 $string['publishers'] = 'Publishers';
 $string['publisherseries'] = 'Publisher / Series';
-$string['questionmark'] = 'Show question mark';
+$string['questionmark'] = 'Add review links';
+$string['questionmark_help'] = '**No**
+: Do NOT add links from the values on the report pages to quiz review pages.
+
+**Yes**
+: Add links from values on the Reader report pages to quiz review pages showing exactly how each question in an attempt at a Reader quiz was answered.';
 $string['quizadd'] = 'Add Reader quizzes';
 $string['quizadded'] = 'Quiz added: {$a}';
 $string['quizarrange'] = 'Arrange Reader quizzes';
 $string['quizdelete'] = 'Delete Reader quizzes';
+$string['quizfordays'] = 'Frequency restriction (days)';
 $string['quizhasnoquestions'] = 'Quiz has no questions';
 $string['quizmanagement'] = 'Quiz management';
 $string['quizname'] = 'Quiz name';
-$string['quiznextlevel'] = 'Give next level, when student answered more than correct quizzes';
 $string['quiznotavailable'] = 'Sorry, this quiz is not currently available to you';
-$string['quizonnextlevel'] = 'Allow to select quizzes of next level';
-$string['quizpreviouslevel'] = 'Allow to select quizzes of previous level';
 $string['quizsetdelay'] = 'Set delay on Reader quizzes';
 $string['quizshowhide'] = 'Show / Hide Reader quizzes';
-$string['quiztimeout'] = 'Quiz time out';
+$string['quiztimelimit'] = 'Quiz time limit';
 $string['quizupdate'] = 'Update Reader quizzes';
 $string['quizupdated'] = 'Quiz updated: {$a}';
 $string['quizupdateswillbeapplied'] = 'Quiz updates will be applied to all courses currently using the quiz.';
@@ -459,11 +534,12 @@ $string['reader:managequizzes'] = 'Manage quizzes';
 $string['reader:manageremotesites'] = 'Manage remote sites';
 $string['reader:managetools'] = 'Manage tools';
 $string['reader:manageusers'] = 'Manage users';
+$string['readerquizsettings'] = 'Reader quiz settings';
 $string['readerreports'] = 'Reader module reports';
 $string['reader:viewbooks'] = 'View books';
 $string['reader:viewreports'] = 'View reports';
 $string['readinglevel'] = 'Reading Level';
-$string['readingreportfor'] = 'Reading Report For';
+$string['readingreportfor'] = 'Reading Report for {$a}';
 $string['redo_upgrade'] = 'Redo upgrade';
 $string['redo_upgradedesc'] = 'Redo an upgrade to the Reader module.';
 $string['remotesitenotaccessible'] = 'Remote download site is not accessible';
@@ -474,30 +550,28 @@ $string['reportbooksummary'] = 'Books (summary)';
 $string['reportgroupsummary'] = 'Groups';
 $string['reportquiztoreader'] = 'Summary Report by Student';
 $string['reports'] = 'Reports';
+$string['reportsettings'] = 'Report settings';
 $string['reportuserdetailed'] = 'Students (full)';
 $string['reportusersummary'] = 'Students (summary)';
-$string['reportwordspoints'] = 'Report';
 $string['requireqtypeordering'] = 'The Reader activity module cannot be installed or updated because the Ordering question type is missing. Please download the Ordering question type, put it at {$a}/question/type/ordering, and reload this page.';
 $string['restoreattempts'] = 'Restore selected attempts';
 $string['restoredeletedattempt'] = 'Restore deleted attempt';
 $string['returntocoursepage'] = 'Return to Course Page';
 $string['returntostudentlist'] = 'Return to Student List';
 $string['rowsperpage'] = 'Rows per page';
-$string['s_anywhere'] = 'Anywhere';
-$string['s_bookcovers'] = 'Show book covers';
-$string['s_bookinstances'] = 'Course-specific quiz selection';
-$string['s_cheated_message'] = '"Cheated" notice';
-$string['s_checkbox'] = 'Use checkboxes in student report';
-$string['s_computers'] = 'On adjoining computers';
 $string['search'] = 'Search';
 $string['searchforthebookthatyouwant'] = 'Search for the book that you want to take a quiz on';
 $string['search_help'] = 'To search for a particular book, enter some text contained in the title of the book and click the "Go" button';
 $string['sectionname'] = 'Section name';
+$string['sectiontoseparate'] = 'add quizzes to separate sections for publisher and level, adding quizzes to existing sections when available';
+$string['sectiontothebottom'] = 'add all quizzes to the bottom of the hidden course in a new section';
+$string['sectiontothissection'] = 'add selected quizzes to this section';
 $string['sectiontypedefault'] = 'The default section(s)';
 $string['sectiontypehidden'] = 'A hidden section';
 $string['sectiontypelast'] = 'The last section';
 $string['sectiontypenew'] = 'A new section';
 $string['sectiontypevisible'] = 'A visible section';
+$string['seedetailsbelow'] = 'see details below';
 $string['select'] = 'Select';
 $string['selectalreadyexist'] = 'Select already exist';
 $string['select_course'] = 'Select Course';
@@ -506,7 +580,6 @@ $string['select_help'] = 'Click on the kind of items you wish to be selected in 
 $string['selectipmask'] = 'Select ip mask';
 $string['selectlevel'] = 'Select Level';
 $string['selectpublisher'] = 'Select Publisher';
-$string['selectquizzes'] = 'Select Quizzes';
 $string['selectseries'] = 'Select Series';
 $string['selectsomeattempts'] = 'Select one or more attempts';
 $string['selectsomebooks'] = 'Select one or more books';
@@ -514,7 +587,6 @@ $string['selectsomeusers'] = 'Select one or more users';
 $string['selectthebookthatyouwant'] = 'Select the book that you want to take a quiz on';
 $string['selectthisquiz'] = 'Select this quiz';
 $string['sendmessage'] = 'Send Message';
-$string['sendmessagesaboutcheating'] = 'Send messages about cheating?';
 $string['sendmessagetext'] = 'Message text';
 $string['sendmessagetime'] = 'Display until';
 $string['sentemailmoodle'] = 'An email has been sent via Moodle to: {$a->email}';
@@ -522,19 +594,19 @@ $string['sentemailphp'] = 'An email has been sent via PHP mail to: {$a->email}';
 $string['separategroups'] = 'Separate groups';
 $string['separatelevels'] = 'Separate levels';
 $string['servererror'] = 'Message from server: {$a}';
-$string['serverlink'] = 'Link to Reader server (with quizzes)';
-$string['serverlogin'] = 'Reader server login';
 $string['serverpassword'] = 'Reader server password';
+$string['serverurl'] = 'Reader server URL';
+$string['serverusername'] = 'Reader server username';
 $string['setbookinstances'] = 'Select quizzes to make available to students';
 $string['setcurrentlevel'] = 'Change reading level for selected students';
+$string['setdelays'] = 'Set delays';
 $string['setgoal'] = 'Set goal';
 $string['setgoals'] = 'Set goals';
-$string['setings'] = 'Settings';
 $string['setlevels'] = 'Set levels';
 $string['setreadinggoal'] = 'Set reading goal';
+$string['settings'] = 'Settings';
 $string['setuniformgoalinpoints'] = 'Set uniform goal in points';
 $string['setuniformgoalinwords'] = 'Set uniform goal in words';
-$string['s_fullpointreport'] = 'Show exact score';
 $string['show'] = 'Show';
 $string['showall'] = 'Show All';
 $string['showattempts'] = 'Show attempts matching these conditions';
@@ -544,37 +616,30 @@ $string['showhidden'] = 'Show hidden books';
 $string['showhide'] = 'Show/Hide';
 $string['showhidebooks'] = 'Update the show/hide setting for selected books';
 $string['showlevel'] = 'Show Level';
-$string['s_ignor_1'] = 'Ignore quizzes taken before';
-$string['s_ignor_2'] = 'but prevent students from retaking them';
+$string['showpoints'] = 'Show points only';
+$string['showpointsandwordcount'] = 'Show both points and word count';
+$string['showprogressbar'] = 'Show progress bar';
+$string['showprogressbar_help'] = '**No**
+: Do NOT show the word count progress bar on the main page for this Reader activity
+
+**Yes**
+: Show the word count progress bar on the main page for this Reader activity';
+$string['showwordcount'] = 'Show word count only';
 $string['sincedate'] = '(since {$a})';
 $string['sincepromotion'] = '(since promotion on {$a})';
-$string['s_individualstrictip'] = 'Restrict access for individual users';
 $string['skipline'] = 'Skip line: {$a}';
 $string['skipped'] = 'Skipped';
 $string['skipquizdownload'] = 'Quiz "{$a->quizname}" already exists in section {$a->sectionnum}, "{$a->sectionname}", of "{$a->coursename}", and has been skipped';
-$string['s_levelrestrictionfeature'] = 'Use the quiz taking level restriction feature';
-$string['s_nextlevel'] = 'Give next level, when student answered more than correct quizzes';
-$string['s_nopromotion'] = 'No promotion after level';
-$string['s_not_cheated_message'] = 'Points restored notice';
-$string['s_off'] = 'Off';
+$string['sortfields'] = 'Sort fields';
 $string['sort_strings'] = 'Sort strings';
 $string['sort_stringsdesc'] = 'Sort the strings used by the Reader module.';
-$string['s_percentcorrectforbook'] = 'Percent correct for marking the book as read';
-$string['s_questionmark'] = 'Hide individual question values';
-$string['s_quizfordays'] = 'Frequency restriction (days)';
-$string['s_quiznextlevel'] = 'Allow to select quizzes of next level';
-$string['s_reportwordspoints'] = 'Report';
-$string['s_sectiontoseparate'] = 'add quizzes to separate sections for publisher and level, adding quizzes to existing sections when available';
-$string['s_sectiontothebottom'] = 'add all quizzes to the bottom of the hidden course in a new section';
-$string['s_sectiontothissection'] = 'add selected quizzes to this section';
-$string['s_securitymeasures'] = 'Security measures';
-$string['s_selectcourse'] = 'Teacher-made quizzes for this module can be found in this course, which is not open for students access.';
-$string['s_selectquizzes'] = 'Allow to select quizzes of previous level';
-$string['s_sendmessagesaboutcheating'] = 'Send messages about cheating?';
+$string['specificgroups'] = 'Specific groups';
+$string['specificlevels'] = 'Specific levels';
 $string['startlevel'] = 'Start level';
-$string['s_totalpointsgoal'] = 'Total point goal for the entire term';
-$string['strftimefinish'] = '%Y %b %d (%a) %H:%M';
-$string['strftimefinishshort'] = '%Y/%m/%d %H:%M';
+$string['stoplevel'] = 'Maximum level';
+$string['stoplevel_help'] = 'Students cannot be promoted automatically beyond this level';
+$string['strfattempttime'] = '%Y %b %d (%a) %H:%M';
+$string['strfattempttimeshort'] = '%Y/%m/%d %H:%M';
 $string['studentmanagement'] = 'Student Management';
 $string['studentslevels'] = 'Change Students Levels, Promotion Policy and Goals';
 $string['studentuserid'] = 'Student user ID';
@@ -582,7 +647,6 @@ $string['studentusername'] = 'Student username';
 $string['studentview'] = 'Student view';
 $string['summaryreportbybooktitle'] = 'Summary Report by Book Title';
 $string['summaryreportbyclassgroup'] = 'Summary Report by Class Group';
-$string['s_wordsprogressbar'] = 'Word Count Progress Bar';
 $string['takequizfor'] = 'Take the quiz for "{$a}"';
 $string['takethisquiz'] = 'Take this quiz';
 $string['targetcategory'] = 'Target category';
@@ -626,10 +690,19 @@ $string['targetsection_help'] = 'Specify the course section i.e. the week or top
 $string['term'] = 'Term';
 $string['therehavebeennonewquizzesorupdates'] = 'There have been no new quizzes or updates added to the MoodleReader quiz bank since the last time you checked.';
 $string['thisblockunavailable'] = 'This block is currently unavailable to this student';
+$string['thislevel'] = 'Quizzes at current level';
+$string['thislevel_help'] = 'The number of quizzes at the current reading level that a student must pass in order to be promoted to the next reading level. Note that only quizzes passed since the most recent promotion count towards the next promotion.';
 $string['thisterm'] = 'this term';
+$string['timefinish'] = 'Time finished';
 $string['timeleft'] = 'Time Remaining';
+$string['timestart'] = 'Time started';
 $string['to'] = 'to';
 $string['tools'] = 'Tools';
+$string['totalallterms'] = 'Total words all terms';
+$string['totalpoints'] = 'Total points';
+$string['totalpointsgoal'] = 'Word/point goal';
+$string['totalpointsgoal_help'] = 'The total number of words/points that students are expected to accumulate in the current term';
+$string['totalthisterm'] = 'Total words this term';
 $string['totalwords'] = 'Total words';
 $string['totalwordsall'] = 'Total Words Read All Terms';
 $string['type'] = 'Type';
@@ -640,6 +713,7 @@ $string['type_help'] = 'Select the type of books you want to be displayed in the
 
 **Books without quizzes**
 : The page will show a list of books for which data such as difficulty and word counts exist, but for which no quiz has yet been created.';
+$string['uniqueip'] = 'Require unique IP';
 $string['update'] = 'Update';
 $string['updatedon'] = 'Updated on {$a}';
 $string['updatequizzes'] = 'Update quizzes';
@@ -676,7 +750,8 @@ If you prefer, you can also delete the above file(s) yourself.
 Click the button below to resume the Moodle update process.';
 $string['uploaddatanoquizzes'] = 'Download data for books that have no quizzes';
 $string['uploadquiztoreader'] = 'Download quizzes from the Reader Quiz Database';
-$string['usecourse'] = 'Quiz location';
+$string['usecourse'] = 'Reader quizzes course';
+$string['usecourse_help'] = 'A course on this Moodle site that contains the Reader quizzes for this Reader activity. This course should be hidden from students. It generally contains quizzes that have been downloaded by the Reader module from an external Reader quiz repository, e.g. moodlereader.net.';
 $string['usedefaultquizid'] = 'Always use default quiz';
 $string['userexport'] = 'Export user data';
 $string['userimport'] = 'Import user data';
@@ -697,13 +772,18 @@ $string['viewlogsuspiciousactivity'] = 'View log of suspicious activity';
 $string['whichbooks'] = 'Choose the books and click "Go"';
 $string['withoutdayfilter'] = 'Without day filter';
 $string['words'] = 'Words';
-$string['wordsallterms'] = 'Total words all terms';
 $string['wordscount'] = 'Word count';
-$string['wordsorpoints'] = 'Display to students';
-$string['wordsprogressbar'] = 'Word Count Progress Bar';
-$string['wordsthisterm'] = 'Total words this term';
+$string['wordsorpoints'] = 'Show words or points';
+$string['wordsorpoints_help'] = '**Show word count only**
+: On report pages, show only the word count for attempts.
+
+**Show points only**
+: On report pages, show only the points earned for attempts.
+
+**Show both words and points**
+: On report pages, show both the word count and the points earned for attempts.';
 $string['youcantake'] = 'You can take';
-$string['youcantakeaquizafter'] = 'You can take a quiz after';
+$string['youcantakeaquizafter'] = 'You can take your next quiz after {$a}';
 $string['youcantakeaquiznow'] = 'You can take a quiz now.';
 $string['youcantakeasmanyquizzesasyouwant'] = 'You can take as many quizzes as you want at Level {$a}.';
 $string['youhavebeenpromoted'] = 'Congratulations!! You have been promoted to Level {$a}';

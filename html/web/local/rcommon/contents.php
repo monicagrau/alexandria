@@ -22,15 +22,19 @@ $pagetitle = $publisher->name;
 
 echo $OUTPUT->heading(get_string('provider_books', 'local_rcommon', $publisher->name));
 
-$action = optional_param('action',false, PARAM_TEXT);
-if($action == 'update') {
+$action = optional_param('action', false, PARAM_TEXT);
+if ($action == 'update') {
     require_once($CFG->dirroot.'/local/rcommon/WebServices/BooksStructure.php');
-    echo get_string('consumewait','local_rcommon');
+    echo get_string('consumewait', 'local_rcommon');
 
-    if (get_all_books_structure($id)){
-        echo $OUTPUT->notification(get_string('consumefinish','local_rcommon'),'notifysuccess');
-    }else {
-        echo $OUTPUT->notification(get_string('consumeerror','local_rcommon'));
+    try {
+        if (get_all_books_structure($id)) {
+            echo $OUTPUT->notification(get_string('consumefinish', 'local_rcommon'), 'notifysuccess');
+        } else {
+            echo $OUTPUT->notification(get_string('consumeerror', 'local_rcommon'));
+        }
+    } catch(Exception $fault) {
+        echo $OUTPUT->notification($fault->getMessage());
     }
 }
 
@@ -95,7 +99,7 @@ if (!empty($books)){
     echo $OUTPUT->notification(get_string("nobooks", "local_rcommon"));
 }
 
-echo '<input type="submit" onclick="this.disabled=\'disabled\'; document.getElementById(\'downloadbookstructures_warning\').style.display=\'block\'; document.location.href=\'contents.php?action=update&id='.urlencode($id).'\'" value="'.get_string('downloadbookstructures', 'local_rcommon').'" />';
+echo '<a href="contents.php?action=update&id='.$id.'" onclick="this.disabled=\'disabled\'; document.getElementById(\'downloadbookstructures_warning\').style.display=\'block\';"><button>'.get_string('downloadbookstructures', 'local_rcommon').'</button></a>';
 echo '<div id="downloadbookstructures_warning" style="display:none; padding:10px;" >'.get_string("downloadbookstructures_warning", "local_rcommon").'</div>';
 
 echo '<div style="padding:10px;">'.get_string("marsupial_bookswarning", "local_rcommon").'</div>';

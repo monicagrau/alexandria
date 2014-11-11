@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['accessnoticesheader'] = 'Pode pré-visualizar o teste, mas se fosse uma tentativa real seria impedido porque:';
 $string['action'] = 'Ação';
-$string['activityoverview'] = 'Existem Testes que requerem a sua atenção';
+$string['activityoverview'] = 'Atenção aos seus Testes! Clique aqui para mais informações.';
 $string['adaptive'] = 'Modo adaptável';
 $string['adaptive_help'] = 'Se selecionar \'Sim\', o aluno poderá responder várias vezes à mesma pergunta, durante a mesma tentativa de resolução do teste. Por exemplo, se a primeira resposta for incorreta, o aluno poderá, de imediato, responder novamente até acertar. Porém, se a configuração "Aplicar penalizações" estiver ativa será aplicada uma penalização na nota da pergunta por cada tentativa errada.';
 $string['addaquestion'] = 'Criar pergunta';
@@ -327,7 +327,7 @@ $string['file'] = 'Ficheiro';
 $string['fileformat'] = 'Formato de ficheiro';
 $string['fillcorrect'] = 'Preencher com o correto';
 $string['filloutnumericalanswer'] = 'Indique pelo menos uma resposta possível e a sua margem de erro. A primeira resposta possível que coincidir com a do aluno será usada para determinar a nota e o feedback. Se escrever algum feedback sem resposta no último campo, este será apresentado às respostas que não se enquadrem em nenhuma das anteriores.';
-$string['filloutoneanswer'] = 'Deve preencher pelo menos uma resposta possível. As respostas em branco não serão consideradas.* pode ser usado como um caráter universal para representar qualquer sequência de carateres. A primeira resposta possível que coincidir com a do aluno será usada para determinar a nota e o feedback.';
+$string['filloutoneanswer'] = 'Deve preencher pelo menos uma resposta possível. As respostas em branco não serão consideradas.* pode ser usado como um carácter universal para representar qualquer sequência de caracteres. A primeira resposta possível que coincidir com a do aluno será usada para determinar a nota e o feedback.';
 $string['filloutthreequestions'] = 'Deve preencher pelo menos três perguntas com respostas correspondentes. Pode acrescentar respostas extra erradas, introduzindo a resposta e deixando a pergunta em branco. As perguntas em que tanto a pergunta como a resposta se encontrem em branco serão ignoradas.';
 $string['fillouttwochoices'] = 'Deve preencher pelo menos duas opções. Opções em branco serão ignoradas.';
 $string['finishattemptdots'] = 'Terminar tentativa';
@@ -385,7 +385,7 @@ $string['importfileupload'] = 'Importar de ficheiro a carregar...';
 $string['importfromthisfile'] = 'Importar deste ficheiro';
 $string['import_help'] = 'Esta função permite importar perguntas a partir de ficheiros de texto externos.
 
-Se o seu ficheiro contêm carateres não-ascii, deve usar a codificação UTF-8. Tenha especial atenção aos ficheiros criados com o Microsoft Office, pois geralmente usam codificações especiais que não serão interpretados corretamente.
+Se o seu ficheiro contêm caracteres não-ascii, deve usar a codificação UTF-8. Tenha especial atenção aos ficheiros criados com o Microsoft Office, pois geralmente usam codificações especiais que não serão interpretados corretamente.
 
 Os formatos de importação e exportação são módulos. Outros formatos opcionais podem estar disponíveis na base de dados de módulos.';
 $string['importingquestions'] = 'A importar {$a} perguntas do ficheiro';
@@ -694,8 +694,8 @@ $string['reportoverview'] = 'Perspetiva global';
 $string['reportregrade'] = 'Reclassificar tentativas';
 $string['reportresponses'] = 'Respostas detalhadas';
 $string['reports'] = 'Relatórios';
-$string['reportshowonly'] = 'Mostrar apenas tentativas';
-$string['reportshowonlyfinished'] = 'Mostrar, no máximo, uma tentativa terminada por utilizador ({$a})';
+$string['reportshowonly'] = 'Mostrar apenas:';
+$string['reportshowonlyfinished'] = 'Uma tentativa terminada por utilizador ({$a})';
 $string['reportsimplestat'] = 'Estatísticas simples';
 $string['reportusersall'] = 'todos os alunos que responderam ao teste';
 $string['reportuserswith'] = 'utilizadores inscritos que responderam ao teste';
