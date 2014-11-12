@@ -18,7 +18,4 @@ if ($hassiteconfig) {
     } else {
         $ADMIN->add('server', new admin_externalpage('agora_adware', 'Detecta Adware', $CFG->wwwroot . '/local/agora/adware/index.php'));
     }
-
-    $ADMIN->add('root', new admin_externalpage('agora_adware', 'Detecta Adware', $CFG->wwwroot . '/local/agora/adware.php'));
-
 }
