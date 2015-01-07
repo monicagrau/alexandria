@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'quiz', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   quiz
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -72,7 +72,6 @@ $string['answerhowmany'] = 'Una resposta o múltiples respostes';
 $string['answers'] = 'Solucions';
 $string['answersingleno'] = 'Es permeten múltiples respostes';
 $string['answersingleyes'] = 'Només una resposta';
-$string['answerswithacceptederrormarginmustbenumeric'] = 'Les respostes amb error acceptat han de ser numèriques';
 $string['answertoolong'] = 'La resposta és massa llarga després de la línia {$a} (màxim 255 caràcters)';
 $string['aon'] = 'Format AON';
 $string['areyousureremoveselected'] = 'Segur que voleu eliminar totes les preguntes seleccionades?';
@@ -100,6 +99,8 @@ $string['attemptsonly'] = 'Mostra només l\'estudiantat amb intents';
 $string['attemptstate'] = 'Estat';
 $string['attemptstillinprogress'] = 'Intent en progrés';
 $string['attemptsunlimited'] = 'Intents il·limitats';
+$string['autosaveperiod'] = 'Període d\'autodesat';
+$string['autosaveperiod_desc'] = 'Les respostes dels estudiants es poden desar automàticament cada pocs minuts durant els intents dels qüestionaris. Això implica un compromís: Desar les respostes augmenta la càrrega del servidor, però redueix la possibilitat que els estudiants perdin la feina.';
 $string['back'] = 'Torna a la previsualització de la pregunta';
 $string['backtocourse'] = 'Retorna al curs';
 $string['backtoquestionlist'] = 'Retorna a la llista de preguntes';
@@ -185,6 +186,12 @@ $string['confirmserverdelete'] = 'Esteu segur que voleu suprimir el servidor <b>
 $string['confirmstartattemptlimit'] = 'Nombre d\'intents permesos: {$a}. Esteu a punt d\'iniciar un nou intent. Voleu continuar?';
 $string['confirmstartattempttimelimit'] = 'Aquest qüestionari té un límit de temps i està limitat a {$a} intent/s. Esteu a punt d\'iniciar un nou intent. Voleu continuar.';
 $string['confirmstarttimelimit'] = 'Aquest qüestionari té un límit de temps. Segur que voleu començar?';
+$string['connectionerror'] = 'S\'ha perdut la connexió a la xarxa. (Ha fallat l\'autodesat).
+
+Prengueu nota de les respostes introduïdes en aquesta pàgina en els últims minuts i, després, tracteu de tornar a connectar.
+
+Una vegada que la connexió s\'hagi restablert, les vostres respostes s\'haurien de desar i el missatge desapareixerà.';
+$string['connectionok'] = 'S\'ha restablert la connexió. Podeu continuar amb seguretat.';
 $string['containercategorycreated'] = 'S\'ha creat aquesta categoria a fi d\'emmagatzemar totes les categories originals que s\'han mogut al nivell del lloc pels motius especificats més avall.';
 $string['continueattemptquiz'] = 'Continua el darrer intent';
 $string['continuepreview'] = 'Continua la darrera previsualització';
@@ -233,6 +240,7 @@ $string['deletingquestionattempts'] = 'S\'estan esborrant els intents de les pre
 $string['description'] = 'Descripció';
 $string['disabled'] = 'Desactivat';
 $string['displayoptions'] = 'Opcions de visualització';
+$string['donotuseautosave'] = 'No utilitzis autodesat.';
 $string['download'] = 'Feu clic per baixar el fitxer de categoria exportat';
 $string['downloadextra'] = '(el fitxer també s\'ha emmagatzemat amb els fitxers del curs a la carpeta /backupdata/quiz)';
 $string['duplicateresponse'] = 'S\'ha ignorat aquesta tramesa perquè ja vau donar anteriorment una resposta equivalent.';
@@ -298,6 +306,10 @@ $string['errornotnumbers'] = 'Error: les respostes han de ser numèriques';
 $string['errorunexpectedevent'] = 'Codi d\'esdeveniment inesperat {$a->event} trobat per a la pregunta {$a->questionid} durant l\'intent {$a->attemptid}.';
 $string['essay'] = 'Resposta oberta';
 $string['essayquestions'] = 'Preguntes';
+$string['eventquizattemptabandoned'] = 'S\'ha abandonat l\'intent del qüestionari';
+$string['eventquizattemptstarted'] = 'S\'ha començat l\'intent del qüestionari';
+$string['eventquizattemptsubmitted'] = 'S\'ha enviat l\'intent del qüestionari';
+$string['eventquizattempttimelimitexceeded'] = 'S\'ha excedit el límit de temps de l\'intent del qüestionari';
 $string['everynquestions'] = 'Cada {$a} preguntes';
 $string['everyquestion'] = 'Cada pregunta';
 $string['everythingon'] = 'Tot activat';
@@ -395,7 +407,7 @@ $string['indivresp'] = 'Respostes dels individus per a cada element';
 $string['info'] = 'Informació';
 $string['infoshort'] = 'i';
 $string['inprogress'] = 'En progrés';
-$string['introduction'] = 'Introducció';
+$string['introduction'] = 'Descripció';
 $string['invalidattemptid'] = 'No es troba l\'intent d\'aquest ID.';
 $string['invalidcategory'] = 'El número ID de la categoria no és vàlid';
 $string['invalidnumericanswer'] = 'Una de les respostes que heu introduït no és un nombre vàlid.';
@@ -436,7 +448,7 @@ $string['missingcorrectanswer'] = 'S\'ha d\'especificar la resposta correcta';
 $string['missingitemtypename'] = 'Falta el nom';
 $string['missingquestion'] = 'Aquesta pregunta sembla no existir ja';
 $string['modulename'] = 'Qüestionari';
-$string['modulename_help'] = 'El mòdul de qüestionaris permet al professorat crear qüestionaris amb preguntes de diversos tipus, com ara de selecció múltiple, cert-fals, aparellaments, resposta curta i numèriques.
+$string['modulename_help'] = 'El mòdul de qüestionaris permet al professorat crear qüestionaris amb preguntes de diversos tipus, com ara de selecció múltiple, cert-fals, aparellaments, resposta breu i numèriques.
 
 El professor pot permetre múltiples intents del qüestionari, amb les preguntes barrejades o escollides a l\'atzar d\'entre un banc de preguntes. Es pot establir un límit de temps.
 
@@ -448,7 +460,7 @@ Els qüestionaris es poden utilitzar:
 
 * Com a examens del curs.
 * Com a mini-tests després de tasques de lectura, o al final d\'un tema.
-* Com a exàmen de repàs si s\'utilitzen preguntes de qüestionaris anteriors.
+* Com a examen de repàs si s\'utilitzen preguntes de qüestionaris anteriors.
 * Per oferir retroacció immediata sobre les capacitats de l\'alumnat.
 * Per auto-avaluació.';
 $string['modulenameplural'] = 'Qüestionaris';
@@ -456,7 +468,7 @@ $string['moveselectedonpage'] = 'Mou les preguntes seleccionades a la pàgina: {
 $string['multichoice'] = 'Opcions múltiples';
 $string['multipleanswers'] = 'Trieu almenys una resposta';
 $string['multiplier'] = 'Multiplicador';
-$string['mustbesubmittedby'] = 'Aquest intent ha de ser enviat per {$a}.';
+$string['mustbesubmittedby'] = 'Aquest intent s\'ha d\'enviar abans de {$a}.';
 $string['name'] = 'Títol';
 $string['navmethod'] = 'Mètode de navegació';
 $string['navmethod_free'] = 'Lliure';
@@ -512,6 +524,7 @@ $string['numattemptsmade'] = 'S\'han fet {$a} intents en aquest qüestionari';
 $string['numberabbr'] = 'n.';
 $string['numerical'] = 'Numèrica';
 $string['numquestionsx'] = 'Preguntes: {$a}';
+$string['oneminute'] = '1 minut';
 $string['onlyteachersexport'] = 'Només el professorat pot exportar preguntes';
 $string['onlyteachersimport'] = 'Només el professorat amb permís d\'edició pot importar preguntes';
 $string['onthispage'] = 'Aquesta pàgina';
@@ -548,7 +561,12 @@ $string['overridegroupeventname'] = '{$a->quiz} - {$a->group}';
 $string['overrides'] = 'Excepcions';
 $string['overrideuser'] = 'Estableix una excepció per l\'usuari';
 $string['overrideusereventname'] = '{$a->quiz} - Excepció';
+$string['page-mod-quiz-attempt'] = 'Pàgina de l\'intent del qüestionari';
 $string['page-mod-quiz-edit'] = 'Edita la pàgina del qüestionari';
+$string['page-mod-quiz-report'] = 'Qualsevol pàgina de l\'informe del qüestionari';
+$string['page-mod-quiz-review'] = 'Pàgina de revisió de l\'intent del qüestionari';
+$string['page-mod-quiz-summary'] = 'Pàgina de resum de l\'intent del qüestionari';
+$string['page-mod-quiz-view'] = 'Pàgina d\'informació del qüestionari';
 $string['page-mod-quiz-x'] = 'Qualsevol pàgina del mòdul de qüestionari';
 $string['pagesize'] = 'Mida de la pàgina';
 $string['parent'] = 'Mare';
@@ -687,6 +705,7 @@ $string['reportregrade'] = 'Recalcula les qualificacions';
 $string['reportresponses'] = 'Respostes detallades';
 $string['reports'] = 'Informes';
 $string['reportshowonly'] = 'Mostra només intents';
+$string['reportshowonlyfinished'] = 'Mostra com a molt un intent acabat per l\'usuari ({$a})';
 $string['reportsimplestat'] = 'Estadístiques simple';
 $string['reportusersall'] = 'tots els usuaris que han intentat el qüestionari';
 $string['reportuserswith'] = 'usuaris inscrits que han intentat el qüestionari';
@@ -783,9 +802,12 @@ $string['showdetailedmarks'] = 'Mostra detalls dels punts';
 $string['showeachpage'] = 'Mostra només una pàgina';
 $string['showfeedback'] = 'Voleu mostrar la retroacció després de contestar?';
 $string['showinsecurepopup'] = 'Utilitza una finestra emergent \'segura\' per als intents';
+$string['showlargeimage'] = 'Imatge gran';
 $string['shownoattempts'] = 'Mostra els estudiants sense intents';
 $string['shownoattemptsonly'] = 'Mostra només els estudiants que no tinguin intents';
+$string['shownoimage'] = 'Sense imatge';
 $string['showreport'] = 'Mostra l\'informe';
+$string['showsmallimage'] = 'Imatge menuda';
 $string['showteacherattempts'] = 'Mostra els intents del professorat';
 $string['showuserpicture'] = 'Mostra la fotografia d\'usuari';
 $string['showuserpicture_help'] = 'Si s\'activa, el nom i la fotografia de l\'estudiant apareixen a la pantalla mentre es realitza l\'intent, i a la pantalla de revisió, cosa que fa més fàcil comprovar que l\'alumne s\'ha identificat per si mateix en un entorn d\'examen.';

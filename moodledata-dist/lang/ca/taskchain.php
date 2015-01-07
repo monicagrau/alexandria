@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'taskchain', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'taskchain', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   taskchain
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,3 +29,4 @@ $string['anyattempts'] = 'Qualsevol intent';
 $string['attempts'] = 'Intents';
 $string['attemptsallowed'] = 'Intents permesos';
 $string['attemptsunlimited'] = 'Intents il·limitats';
+$string['showdescription'] = 'Mostra la descripció';

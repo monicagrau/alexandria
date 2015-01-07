@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'gradeimport_xml', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'gradeimport_xml', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   gradeimport_xml
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,7 @@ $string['errincorrectgradeidnumber'] = 'Error: el número ID \'{$a}\' del fitxer
 $string['errincorrectidnumber'] = 'Error: número ID incorrecte';
 $string['errincorrectuseridnumber'] = 'Error: el número ID \'{$a}\' del fitxer d\'importació no es correspon amb cap usuari.';
 $string['error'] = 'Error';
+$string['errorduringimport'] = 'S\'ha produït un error en intentar importar: {$a}';
 $string['fileurl'] = 'URL d\'un fitxer remot';
 $string['pluginname'] = 'Fitxer XML';
 $string['xml:publish'] = 'Publicar qualificacions importades en format XML';

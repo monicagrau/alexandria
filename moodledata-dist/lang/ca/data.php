@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'data', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'data', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   data
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,6 +31,7 @@ $string['addcomment'] = 'Afegeix un comentari';
 $string['addentries'] = 'Afegeix entrades';
 $string['addtemplate'] = 'Plantilla d\'introducció';
 $string['advancedsearch'] = 'Cerca avançada';
+$string['allowcomments'] = 'Permeteu comentaris en les entrades?';
 $string['alttext'] = 'Text alternatiu';
 $string['approve'] = 'Aprova';
 $string['approved'] = 'Acceptat';
@@ -74,6 +75,7 @@ $string['commentsoff'] = 'No està habilitada la funció de comentaris';
 $string['configenablerssfeeds'] = 'Aquest commutador habilita la possibilitat de canals RSS de les bases de dades. Però cal activar manualment els canals en els paràmetres de cada base de dades.';
 $string['confirmdeletefield'] = 'Segur que voleu suprimir aquest camp?';
 $string['confirmdeleterecord'] = 'Segur que voleu suprimir aquesta entrada?';
+$string['confirmdeleterecords'] = 'Segur que voleu suprimir aquestes entrades?';
 $string['csstemplate'] = 'Plantilla CSS';
 $string['csvfailed'] = 'No es poden llegir les dades del fitxer CSV';
 $string['csvfile'] = 'Fitxer CSV:';
@@ -101,7 +103,7 @@ $string['csvimport_help'] = '<p align="center"><strong>Importació d\'un fitxer 
 <p>Avís: potser no es podran importar tots els tipus de camps.</p>';
 $string['csvwithselecteddelimiter'] = 'Delimitador de text <acronym title="Comma Separated Values">CSV</acronym>:';
 $string['data:addinstance'] = 'Afegeix una nova base de dades';
-$string['data:approve'] = 'Aprovar entrades pendents';
+$string['data:approve'] = 'Aprovar i desfer entrades aprovades';
 $string['data:comment'] = 'Escriure comentaris';
 $string['data:exportallentries'] = 'Exporta totes les entrades de la base de dades';
 $string['data:exportentry'] = 'Exporta una entrada de la base de dades';
@@ -124,6 +126,7 @@ $string['dateentered'] = 'Data d\'introducció';
 $string['defaultfielddelimiter'] = '(per defecte és una coma)';
 $string['defaultfieldenclosure'] = '(per defecte no s\'utilitza)';
 $string['defaultsortfield'] = 'Camp d\'ordenació per defecte';
+$string['delcheck'] = 'Casella d\'eliminació massiva';
 $string['delete'] = 'Suprimeix';
 $string['deleteallentries'] = 'Suprimeix totes les entrades';
 $string['deletecomment'] = 'Segur que voleu suprimir aquest comentari?';
@@ -133,6 +136,7 @@ $string['deletenotenrolled'] = 'Suprimeix les entrades d\'usuaris no inscrits';
 $string['deletewarning'] = 'Segur que voleu suprimir aquest predefinit?';
 $string['descending'] = 'Descendent';
 $string['directorynotapreset'] = '{$a->directory} No és un predefinit: falten fitxers: {$a->missing_files}';
+$string['disapprove'] = 'Desfés l\'aprovació';
 $string['download'] = 'Baixa';
 $string['edit'] = 'Edita';
 $string['editcomment'] = 'Edita comentari';
@@ -204,7 +208,7 @@ $string['includeapproval'] = 'Inclou l\'estat d\'aprovació';
 $string['includetime'] = 'Inclou el temps afegit/modificat';
 $string['includeuserdetails'] = 'Inclou els detalls de l\'usuari';
 $string['insufficiententries'] = 'fan falta més entrades per veure aquesta base de dades';
-$string['intro'] = 'Introducció';
+$string['intro'] = 'Descripció';
 $string['invalidaccess'] = 'No heu accedit a aquesta pàgina correctament';
 $string['invalidfieldid'] = 'El camp ID és incorrecte';
 $string['invalidfieldname'] = 'Trieu un altre nom per a aquest camp';
@@ -256,15 +260,15 @@ $string['multimenu'] = 'Menú (selecció múltiple)';
 $string['multipletags'] = 'S\'han trobat múltiples etiquetes. No s\'ha desat la plantilla.';
 $string['namecheckbox'] = 'Casella de selecció';
 $string['namedate'] = 'Data';
-$string['namefile'] = 'Fitxer';
+$string['namefile'] = 'Camp de fitxer';
 $string['namelatlong'] = 'Camp de latitud/longitud';
-$string['namemenu'] = 'Menú';
+$string['namemenu'] = 'Camp de menú';
 $string['namemultimenu'] = 'Menú de selecció múltiple';
 $string['namenumber'] = 'Nombre';
-$string['namepicture'] = 'Imatge';
+$string['namepicture'] = 'Camp d\'imatge';
 $string['nameradiobutton'] = 'Botó de grup';
-$string['nametext'] = 'Text';
-$string['nametextarea'] = 'Text';
+$string['nametext'] = 'Camp de text';
+$string['nametextarea'] = 'Camp d\'àrea de text';
 $string['nameurl'] = 'URL';
 $string['newentry'] = 'Nova entrada';
 $string['newfield'] = 'Crea un nou camp';
@@ -276,7 +280,7 @@ $string['newfield_help'] = '<p align="center"><strong>Camps</strong></p>
 $string['noaccess'] = 'No teniu accés a aquesta pàgina';
 $string['nodefinedfields'] = 'El nou predefinit no té camps';
 $string['nofieldcontent'] = 'No e stroba el contingut del camp';
-$string['nofieldindatabase'] = 'No s\'han definit camps en aquesta base de dades. Afegiu-ne algun.';
+$string['nofieldindatabase'] = 'No s\'han definit camps en aquesta base de dades.';
 $string['nolisttemplate'] = 'Encara no s\'ha definit la plantilla de llista.';
 $string['nomatch'] = 'No s\'han trobat entrades que coincideixin';
 $string['nomaximum'] = 'No hi ha un valor màxim';
@@ -309,13 +313,14 @@ $string['presets'] = 'Predefinits';
 $string['radiobutton'] = 'Botons d\'opció';
 $string['recordapproved'] = 'S\'ha aprovat l\'entrada';
 $string['recorddeleted'] = 'S\'ha suprimit l\'entrada';
+$string['recorddisapproved'] = 'Entrada no aprovada';
 $string['recordsnotsaved'] = 'No s\'ha desat cap entrada. Comproveu el format del fitxer.';
 $string['recordssaved'] = 'entrada/es';
 $string['requireapproval'] = 'Requereix aprovació?';
 $string['requireapproval_help'] = '<p align="center"><strong>Requerir aprovació</strong></p>
 
 <p>Cal que el professorat aprovi les entrades abans que l\'estudiantat pugui visualitzar-les? Això és útil per moderar continguts potencialment ofensius o inadequats.</p>';
-$string['requiredentries'] = 'Entrades requerides';
+$string['requiredentries'] = 'Entrades requerides per a la compleció';
 $string['requiredentries_help'] = '<p align="center"><strong>Entrades requerides</strong></p>
 
 <p>El nombre d\'entrades que cal que trameti cada participant. Als usuaris que no hagin tramès aquest nombre d\'entrades se\'ls mostrarà un recordatori quan visualitzin la base de dades.</p>

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_overlay', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'theme_overlay', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   theme_overlay
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,8 +33,8 @@ $string['footertext'] = 'Text del peu de pàgina';
 $string['footertextdesc'] = 'Configura un text per al peu de pàgina.';
 $string['headercolor'] = 'Color de la capçalera';
 $string['headercolordesc'] = 'Color de fons de la capçalera';
-$string['linkcolor'] = 'Color de l\'enllaços';
-$string['linkcolordesc'] = 'Això configura el color de l\'enllaços per aquest tema.';
+$string['linkcolor'] = 'Color de l\'enllaç';
+$string['linkcolordesc'] = 'Això configura el color de l\'enllaç per a aquest tema.';
 $string['pluginname'] = 'Overlay';
 $string['region-side-post'] = 'Dreta';
 $string['region-side-pre'] = 'Esquerra';

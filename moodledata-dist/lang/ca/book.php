@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'book', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'book', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   book
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -40,6 +40,12 @@ $string['customtitles_help'] = 'Normalment el títol del capítol es mostra auto
 Si la casella de selecció dels títols està marcada, el títol del capítol NO es mostrarà com a capçalera damunt del contingut. Es pot introduir un títol diferent com a part del contingut (potser més llarg que el títol del capítol).';
 $string['editingchapter'] = 'S\'està editant el capítol';
 $string['errorchapter'] = 'S\'ha produït un error en llegir el capítol.';
+$string['event_chapter_created'] = 'S\'ha creat el capítol.';
+$string['event_chapter_deleted'] = 'S\'ha suprimit el capítol.';
+$string['event_chapter_updated'] = 'S\'ha actualitzat el capítol.';
+$string['event_chapter_viewed'] = 'S\'ha visualitzat el capítol.';
+$string['event_course_module_viewed'] = 'S\'ha visualitzat el mòdul del curs.';
+$string['event_instances_list_viewed'] = 'S\'ha visualitzat la llista d\'instàncies.';
 $string['modulename'] = 'Llibre';
 $string['modulename_help'] = 'El mòdul de llibre permet al professorat crear un recurs de diverses pàgines en un format de llibre, amb capítols i subcapítols. Els llibres poden contenir fitxers multimèdia, així com text, i són útils per a mostrar llargs passatges d\'informació que es poden dividir en seccions.
 
@@ -48,7 +54,7 @@ Un llibre pot utilitzar-se
 * Com a manual departamental del personal
 * Com a portafolis de presentació del treball de l\'estudiantat';
 $string['modulenameplural'] = 'Llibres';
-$string['navexit'] = 'Sortir del llibre';
+$string['navexit'] = 'Surt del llibre';
 $string['navnext'] = 'Següent';
 $string['navprev'] = 'Prèvi';
 $string['nocontent'] = 'No s\'ha afegit encara cap contingut al llibre.';
@@ -57,10 +63,10 @@ $string['numbering0'] = 'Cap';
 $string['numbering1'] = 'Nombres';
 $string['numbering2'] = 'Pics';
 $string['numbering3'] = 'Sagnat';
-$string['numbering_help'] = '* Cap - els capítols i títols de subcapítols no tenen cap format; utilitzeu-ho si voleu definir estils especials de numeració. Per exemple, lletres: escriviu en el títol del capítol "A. Primer capítol", "A.1 Subcapítol", ...
-* Nombres - els capítols i subcapítols es numeren (1, 1.1, 1.2, 2, ...)
-* Pics - els subcapítols es sagnen i es mostren amb pics
-* Sagnat - els subcapítols es sagnen';
+$string['numbering_help'] = '* Cap - els títols dels capítols i subcapítols no tenen cap format
+* Nombres - els títols dels capítols i subcapítols es numeren (1, 1.1, 1.2, 2, ...)
+* Pics - els subcapítols es sagnen i es mostren amb pics en la taula de continguts
+* Sagnat - els subcapítols es sagnen en la taula de continguts';
 $string['numberingoptions'] = 'Opcions de numeració disponibles';
 $string['numberingoptions_desc'] = 'Seleccioneu les opcions de numeració que voleu tenir disponibles en crear nous llibres.';
 $string['page-mod-book-x'] = 'Qualsevol pàgina del llibre';

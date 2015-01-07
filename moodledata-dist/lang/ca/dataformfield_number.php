@@ -16,14 +16,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'format_scorm', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'dataformfield_number', language 'ca', branch 'MOODLE_26_STABLE'
  *
- * @package   format_scorm
+ * @package   dataformfield_number
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Format SCORM';
-$string['sectionname'] = 'SCORM';
+$string['decimals'] = 'Decimals';
+$string['pluginname'] = 'Número';

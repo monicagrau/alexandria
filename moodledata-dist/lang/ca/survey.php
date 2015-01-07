@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'survey', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'survey', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   survey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -170,13 +170,13 @@ $string['collesm5short'] = 'Recolzament de companys';
 $string['collesm6'] = 'Interpretació';
 $string['collesm6short'] = 'Interpretació';
 $string['collesmintro'] = 'En aquesta unitat en línia...';
-$string['collespintro'] = 'El propòsit d’aquesta enquesta es ajudar-nos a entendre el que tu valores en una experiència d’aprenentatge en línia.
+$string['collespintro'] = 'El propòsit d’aquesta enquesta és ajudar-nos a entendre el que tu valores en una experiència d’aprenentatge en línia.
 Cada una de les 24 declaracions següents l’interroguen sobre la teva experiència <b>favorita</b> (ideal) en aquesta unitat.
-No existeixen respostes \'correctes\' o \'equivocades\', sòls ens interessa la teva opinió. Les teves  respostes seran tractades amb alt grau de confidencialitat i no afectaran la teva avaluació.
+No existeixen respostes \'correctes\' o \'equivocades\', sòls ens interessa la teva opinió. Les teves respostes seran tractades amb alt grau de confidencialitat i no afectaran la teva avaluació.
 Les teves respostes, pensades cuidadosament, ens ajudaran a millorar la manera de presentar aquesta unitat en el futur.
 Moltes gràcies per la teva col·laboració.';
 $string['collespname'] = 'COLLES (preferit)';
-$string['customintro'] = 'Introducció personalitzada';
+$string['customintro'] = 'Descripció';
 $string['deleteallanswers'] = 'Suprimeix totes les respostes';
 $string['deleteanalysis'] = 'Suprimeix';
 $string['done'] = 'Fet';

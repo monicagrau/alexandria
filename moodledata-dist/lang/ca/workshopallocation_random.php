@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshopallocation_random', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'workshopallocation_random', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   workshopallocation_random
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -29,7 +29,7 @@ $string['addselfassessment'] = 'Afegeix autoavaluacions';
 $string['allocationaddeddetail'] = 'Nova tasca per avaluar: <strong>{$a->reviewername}</strong> revisarà la feina de <strong>{$a->authorname}</strong>';
 $string['allocationdeallocategraded'] = 'No s\'ha pogut desassignar un tramesa ja avaluada: revisor: <strong>{$a->reviewername}</strong>, autor del treball: <strong>{$a->authorname}</strong>';
 $string['allocationreuseddetail'] = 'Avaluació reutilitzada: <strong>{$a->reviewername}</strong> es manté com a revisor de <strong>{$a->authorname}</strong>';
-$string['allocationsettings'] = 'Paràmetres de la tramesa';
+$string['allocationsettings'] = 'Paràmetres de l\'assignació aleatòria';
 $string['assessmentdeleteddetail'] = 'S\'ha desassignat la tramesa: <strong>{$a->reviewername}</strong> ja no revisarà la feina de <strong>{$a->authorname}</strong>';
 $string['assesswosubmission'] = 'Els participants poden avaluar sense haver enviat res';
 $string['confignumofreviews'] = 'Nombre de trameses a assignar alatòriament per omissió';

@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'tool_profiling', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'tool_profiling', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   tool_profiling
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,6 +32,13 @@ $string['comment'] = 'Comentari';
 $string['cputime'] = 'Data CPU';
 $string['differencesbetween2runsof'] = 'Diferencies entre dos execucions de {$a}';
 $string['executiontime'] = 'Temps d\'execució';
+$string['export'] = 'Exporta';
+$string['exportproblem'] = 'Ha succeït un problema quan s\'estava exportant el perfil d\'execució «{$a->runid}» que correspon a la petició «{$a->listurl}».';
+$string['exportthis'] = 'Exporta aquest perfil d\'execució';
+$string['import'] = 'Importa';
+$string['importok'] = 'El fitxer «{$a}»  s\'ha importat amb èxit.';
+$string['importprefix'] = 'Importa prefix';
+$string['importproblem'] = 'Ha succeït un problema quan s\'estava important el fitxer «{$a}».';
 $string['lastrunof'] = 'Resum de la darrera execució de {$a}';
 $string['markreferencerun'] = 'Marca com referencia de execució/comentari';
 $string['memory'] = 'Memòria utilitzada';
@@ -43,5 +50,5 @@ $string['referencerun'] = 'Referència execució/comentari';
 $string['runid'] = 'ID de l\'execució';
 $string['summaryof'] = 'Resum de {$a}';
 $string['viewdetails'] = 'Mostra els detalls del perfils';
-$string['viewdiff'] = 'Mostra les diferencies dels perfils amb la darrera execució de referencia';
+$string['viewdiff'] = 'Mostra les diferències dels perfils amb la darrera execució de referència';
 $string['viewdiffdetails'] = 'Mostra els detalls de les diferencies del perfils';

@@ -16,17 +16,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_blackboard', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'reservation', language 'ca', branch 'MOODLE_26_STABLE'
  *
- * @package   qformat_blackboard
+ * @package   reservation
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['defaultname'] = 'Pregunta importada {$a}';
-$string['importnotext'] = 'S\'ha perdut el text de la pregunta en el fitxer XML';
-$string['notenoughtsubans'] = 'No s\'ha pogut importar la pregunta \'{$a}\' perquè una pregunta d\'aparellaments ha de tenir almenys dues preguntes i tres respostes.';
-$string['pluginname'] = 'Blackboard';
-$string['pluginname_help'] = 'El format Blackboard permet importar  preguntes desades en el format d\'exportació tipus «POOL» de la versió 5 del Blackboard.';
+$string['description'] = 'Descripció';

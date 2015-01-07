@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'quiz_grading', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'quiz_grading', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   quiz_grading
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,7 +32,9 @@ $string['attemptstograde'] = 'Intents per qualificar';
 $string['automaticallygraded'] = 'Qualificat automàticament';
 $string['backtothelistofquestions'] = 'Torna a la llista de preguntes';
 $string['bydate'] = 'Per data';
+$string['bystudentfirstname'] = 'Pel nom de l\'estudiant';
 $string['bystudentidnumber'] = 'Per ID d\'estudiant';
+$string['bystudentlastname'] = 'Pel cognom de l\'estudiant';
 $string['cannotgradethisattempt'] = 'No s\'ha pogut qualificar aquest intent';
 $string['cannotloadquestioninfo'] = 'No s\'ha pogut carregar la informació de pregunta específica de tipus de pregunta';
 $string['changeoptions'] = 'Canvia les opcions';

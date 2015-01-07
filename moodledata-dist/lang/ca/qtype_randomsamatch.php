@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_randomsamatch', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'qtype_randomsamatch', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   qtype_randomsamatch
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,10 +25,16 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['insufficientoptions'] = 'Les opcions de selecció disponibles són insuficients per a aquesta pregunta, per tant no està disponible en aquest qüestionari. Informeu el vostre professor.';
 $string['nosaincategory'] = 'No hi ha preguntes de resposta breu en la categoria seleccionada \'{$a->catname}\'. Trieu una altra categoria o creeu preguntes en aquesta categoria.';
 $string['notenoughsaincategory'] = 'Només hi ha {$a->nosaquestions} preguntes de resposta breu en la categoria seleccionada \'{$a->catname}\'. Trieu una altra categoria, creeu més preguntes en aquesta categoria o reduïu la quantitat de preguntes seleccionades.';
 $string['pluginname'] = 'Aparellament de respostes curtes aleatòries';
-$string['pluginnameadding'] = 'S\'està afegint una pregunta aleatòria de resposta curta';
-$string['pluginnameediting'] = 'S\'està editant una pregunta aleatòria de resposta curta';
-$string['pluginname_help'] = 'Des de la perspectiva dels estudiants, això s\'assembla a una pregunta d\'aparellament. La diferència és que la llista de noms o enunciats (preguntes) per aparellament s\'extreuen a l\'atzar de les preguntes de resposta curta de la mateixa categoria. Hi ha d\'haver suficients preguntes de resposta curta no utilitzades en la categoria, en cas contrari es mostrarà un missatge d\'error.';
-$string['pluginnamesummary'] = 'Igual que una pregunta d\'aparellament, però creat a l\'atzar de les preguntes de resposta curta en una categoria particular.';
+$string['pluginnameadding'] = 'S\'està afegint una pregunta aleatòria de resposta breu';
+$string['pluginnameediting'] = 'S\'està editant una pregunta aleatòria de resposta breu';
+$string['pluginname_help'] = 'Des de la perspectiva dels estudiants, això s\'assembla a una pregunta d\'aparellament. La diferència és que la llista de noms o enunciats (preguntes) per aparellament s\'extreuen a l\'atzar de les preguntes de resposta breu de la mateixa categoria. Hi ha d\'haver suficients preguntes de resposta breu no utilitzades en la categoria, en cas contrari es mostrarà un missatge d\'error.';
+$string['pluginnamesummary'] = 'Igual que una pregunta d\'aparellament, però creada a l\'atzar de les preguntes de resposta breu en una categoria particular.';
+$string['randomsamatch'] = 'Concordança de respostes curtes aleatòries';
+$string['randomsamatchintro'] = 'Per a cadascuna de les preguntes següents, seleccioneu la resposta que concordi del menú.';
+$string['randomsamatchnumber'] = 'Nombre de preguntes a seleccionar';
+$string['subcats'] = 'Inclou subcategories';
+$string['subcats_help'] = 'Si està marcat, també es seleccionaran preguntes de les subcategories.';

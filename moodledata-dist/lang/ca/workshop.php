@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'workshop', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'workshop', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   workshop
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,7 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['accesscontrol'] = 'Control d\'accés';
 $string['aggregategrades'] = 'Torna a calcular les qualificacions';
 $string['aggregation'] = 'Agregació de les qualificacions';
 $string['allocate'] = 'Assigneu les trameses';
@@ -39,6 +38,8 @@ $string['alreadygraded'] = 'Ja qualificat';
 $string['areaconclusion'] = 'Text d\'acabament';
 $string['areainstructauthors'] = 'Instruccions per a la tramesa';
 $string['areainstructreviewers'] = 'Instruccions per a l\'avaluació';
+$string['areaoverallfeedbackattachment'] = 'Fitxers adjunts de la retroalimentació global';
+$string['areaoverallfeedbackcontent'] = 'Textos de la retroalimentació global';
 $string['areasubmissionattachment'] = 'Adjuncions a la tramesa';
 $string['areasubmissioncontent'] = 'Texts de la tramesa';
 $string['assess'] = 'Avalua';
@@ -49,7 +50,7 @@ $string['assessingsubmission'] = 'S\'està avaluant la tramesa';
 $string['assessment'] = 'Avaluació';
 $string['assessmentby'] = 'per <a href="{$a->url}">{$a->name}</a>';
 $string['assessmentbyfullname'] = 'Avaluació per {$a}';
-$string['assessmentbyyourself'] = 'Autoavaluació';
+$string['assessmentbyyourself'] = 'L\'avaluació que heu fet';
 $string['assessmentdeleted'] = 'S\'ha desassignat l\'avaluació';
 $string['assessmentend'] = 'Data límit per a l\'avaluació';
 $string['assessmentendbeforestart'] = 'La data límit per a l\'avaluació no pot ser anterior a la data d\'inici de les avaluacions';
@@ -105,8 +106,9 @@ $string['err_removegrademappings'] = 'No s\'han pogut esborrar els mapatges de q
 $string['evaluategradeswait'] = 'Si us plau, espereu mentre s\'avaluen les avaluacions i es calculen les qualificacions.';
 $string['evaluation'] = 'Càlcul de les qualificacions';
 $string['evaluationmethod'] = 'Mètode de càlcul de les qualificacions';
-$string['evaluationmethod_help'] = 'El mètode de càlcul de les qualificacions determina com es calcula la qualificació de l\'avaluació. Actualment només hi ha una opció: comparació amb la millor avaluació.';
+$string['evaluationmethod_help'] = 'El mètode de càlcul de les qualificacions determina com es calcula la qualificació de l\'avaluació. Podeu tornar a calcular les qualificacions diverses vegades amb diferents configuracions fins que estigueu satisfets amb el resultat.';
 $string['evaluationsettings'] = 'Paràmetres de la puntuació d\'avaluacions';
+$string['event_assessable_uploaded'] = 'S\'ha pujat una tramesa.';
 $string['example'] = 'Tramesa d\'exemple';
 $string['exampleadd'] = 'Afegeix una tramesa d\'exemple';
 $string['exampleassess'] = 'Avalua la tramesa d\'exemple';
@@ -126,8 +128,10 @@ $string['examplesmode'] = 'Mode d\'avaluació dels exemples';
 $string['examplesubmissions'] = 'Trameses d\'exemple';
 $string['examplesvoluntary'] = 'L\'avaluació de la tramesa d\'exemple és voluntària';
 $string['feedbackauthor'] = 'Retroacció per a l\'autor';
+$string['feedbackauthorattachment'] = 'Adjunció';
 $string['feedbackby'] = 'Retroacció de {$a}';
 $string['feedbackreviewer'] = 'Retroacció per al revisor';
+$string['feedbacksettings'] = 'Retroacció';
 $string['formataggregatedgrade'] = '{$a->grade}';
 $string['formataggregatedgradeover'] = '<del>{$a->grade}</del><br /><ins>{$a->over}</ins>';
 $string['formatpeergrade'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">({$a->gradinggrade})</span>';
@@ -155,13 +159,12 @@ $string['iamsure'] = 'Si, n\'estic segur(a)';
 $string['info'] = 'Info';
 $string['instructauthors'] = 'Instruccions per la tramesa';
 $string['instructreviewers'] = 'Instruccions per l\'avaluació';
-$string['introduction'] = 'Introducció';
+$string['introduction'] = 'Descripció';
 $string['latesubmissions'] = 'Trameses fora de termini';
 $string['latesubmissionsallowed'] = 'Es permeten les trameses fora de termini';
 $string['latesubmissions_desc'] = 'Permet les trameses fora de termini';
 $string['latesubmissions_help'] = 'Si s\'habilita, un autor podrà enviar la seva feina després del termini establert, o durant la fase d\'avaluació. Tanmateix, les trameses fora de termini no poden editar-se.';
 $string['maxbytes'] = 'Mida màxima de fitxer';
-$string['miscellaneoussettings'] = 'Paràmetres diversos';
 $string['modulename'] = 'Taller';
 $string['modulename_help'] = 'El mòdul d\'activitat del taller permet la recollida, anàlisi i col·laboració dels dels estudiants.
 Els estudiants poden presentar qualsevol contingut digital (fitxers), com documents o fulls de càlcul en Word o LibreOffice , i també es pot escriure text directament en un camp utilitzant l\'editor de text.
@@ -183,6 +186,14 @@ $string['notoverridden'] = 'No rectificada';
 $string['noworkshops'] = 'Aquest curs no té tallers';
 $string['noyoursubmission'] = 'Encara no heu enviat la vostra feina';
 $string['nullgrade'] = '-';
+$string['overallfeedback'] = 'Retroalimentació global';
+$string['overallfeedbackfiles'] = 'Nombre màxim d\'adjunts en la retroalimentació global';
+$string['overallfeedbackmaxbytes'] = 'Mida màxima de fitxer';
+$string['overallfeedbackmode'] = 'Mode de retroalimentació global';
+$string['overallfeedbackmode_0'] = 'Deshabilitat';
+$string['overallfeedbackmode_1'] = 'Habilitat i opcional';
+$string['overallfeedbackmode_2'] = 'Habilitat i necessari';
+$string['overallfeedbackmode_help'] = 'Si s\'habilita es mostrarà un un missatge de text a la part inferior del formulari d\'avaluació. Els professors poden posar l\'avaluació general de la tramesa allí, o proporcionar una explicació addicional de la seva avaluació.';
 $string['page-mod-workshop-x'] = 'Qualsevol pàgina del mòdul de tallers';
 $string['participant'] = 'Participant';
 $string['participantrevierof'] = 'El participant és el revisor de';
@@ -204,9 +215,15 @@ $string['reassess'] = 'Torna a avaluar';
 $string['receivedgrades'] = 'Qualificacions rebudes';
 $string['recentassessments'] = 'Avaluacions del taller:';
 $string['recentsubmissions'] = 'Trameses del taller:';
+$string['resetassessments'] = 'Esborra totes les avaluacions';
+$string['resetphase'] = 'Canvia a la fase de configuració';
+$string['resetphase_help'] = 'Si s\'habilita, tots els tallers es posaran a la fase de configuració inicial.';
+$string['resetsubmissions'] = 'Esborra totes les trameses';
+$string['resetsubmissions_help'] = 'Totes les trameses i les seves avaluacions se suprimiran. Això no afecta les trameses d\'exemple.';
 $string['saveandclose'] = 'Desa i tanca';
 $string['saveandcontinue'] = 'Desa i continua editant';
 $string['saveandpreview'] = 'Desa i previsualitza';
+$string['saveandshownext'] = 'Desa i mostra el següent';
 $string['selfassessmentdisabled'] = 'L\'autoavaluació està deshabilitada';
 $string['showingperpage'] = 'S\'estan mostrant {$a} elements per pàgina';
 $string['showingperpagechange'] = 'Canvia a...';
@@ -260,7 +277,7 @@ $string['taskassessself'] = 'Autoavalueu-vos';
 $string['taskconclusion'] = 'Proporcioneu una conclusió de l\'activitat';
 $string['taskinstructauthors'] = 'Especifiqueu les instruccions per la tramesa';
 $string['taskinstructreviewers'] = 'Especifiqueu les instruccions per l\'avaluació';
-$string['taskintro'] = 'Establiu la introducció del taller';
+$string['taskintro'] = 'Establiu la descripció del taller';
 $string['tasksubmit'] = 'Trameteu la vostra feina';
 $string['toolbox'] = 'Eines del taller';
 $string['undersetup'] = 'El taller d\'està configurant. Si us plau, espereu fins que es canvii a la fase següent.';
@@ -282,7 +299,6 @@ $string['withoutsubmission'] = 'Revisor sense tramesa pròpia';
 $string['workshop:addinstance'] = 'Afegeix un taller nou';
 $string['workshop:allocate'] = 'Assigna les trameses per revisar';
 $string['workshop:editdimensions'] = 'Edita els formularis d\'avaluació';
-$string['workshopfeatures'] = 'Característiques del taller';
 $string['workshop:ignoredeadlines'] = 'Ignora les restriccions temporals';
 $string['workshop:manageexamples'] = 'Gestiona les trameses d\'exemple';
 $string['workshopname'] = 'Nom del taller';

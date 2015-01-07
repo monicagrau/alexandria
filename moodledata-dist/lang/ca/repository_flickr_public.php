@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_flickr_public', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'repository_flickr_public', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   repository_flickr_public
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -37,6 +37,7 @@ $string['by-sa'] = 'Llicència Reconeixement-CompartirIgual';
 $string['callbackurl'] = 'URL de crida de retorn';
 $string['commercialuse'] = 'Vull poder utilitzar imatges amb finalitat comercial';
 $string['configplugin'] = 'Configuració pública de Flickr';
+$string['creativecommonscommercial'] = 'Sols creative commons comercials';
 $string['emailaddress'] = 'Adreça de correu electrònic';
 $string['flickr_public:view'] = 'Utilitza el repositori públic de Flickr al selector de fitxers';
 $string['fulltext'] = 'Text complet';

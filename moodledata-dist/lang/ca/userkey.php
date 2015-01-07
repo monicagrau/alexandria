@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'userkey', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'userkey', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   userkey
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -31,7 +31,7 @@ $string['deletekeyconfirm'] = 'Segur que voleu suprimir aquesta clau d\'usuari?'
 $string['edituserkey'] = 'Edita clau d\'usuari';
 $string['keyiprestriction'] = 'Restricció clau IP';
 $string['keyiprestriction_help'] = 'Entreu una IP específica o un rang d\'adreces IP que seran les úniques IP amb permís per a accedir a aquestes dades. Deixeu-ho buit per deshabilitar la restricció IP (no recomanat).';
-$string['keymanager'] = 'Gestió de claus';
+$string['keymanager'] = 'Gestor de claus';
 $string['keyvaliduntil'] = 'Clau vàlida fins';
 $string['keyvaliduntil_help'] = 'Seleccioneu una data opcional després de la qual la clau no serà vàlida (recomanat per augmentar la seguretat).';
 $string['keyvalue'] = 'Valor de la clau';

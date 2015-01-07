@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qformat_gift', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'qformat_gift', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   qformat_gift
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -35,4 +35,4 @@ $string['giftrightbraceerror'] = 'No es troba un }';
 $string['importminerror'] = 'Hi ha un error a la pregunta. No hi ha prou respostes per a aquest tipus de pregunta.';
 $string['nohandler'] = 'No hi ha una capçalera per al tipus de pregunta {$a}';
 $string['pluginname'] = 'Format Gift';
-$string['pluginname_help'] = 'El format Gift permet la selecció múltiple, vertader-fals , resposta curta, la cerca, emplenar paraules buides, preguntes númeriques i assatjos que s\'han d\'importar o exportar amb el fitxer de text.';
+$string['pluginname_help'] = 'El format Gift permet la selecció múltiple, vertader-fals , resposta breu, la cerca, emplenar paraules buides, preguntes numèriques i assajos que s\'han d\'importar o exportar amb el fitxer de text.';

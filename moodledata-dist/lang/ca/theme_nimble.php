@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_nimble', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'theme_nimble', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   theme_nimble
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -32,8 +32,8 @@ $string['footerline'] = 'Peu de pàgina';
 $string['footerlinedesc'] = 'Afegeix algun text ( drets d\'autor, etc. ) al peu.';
 $string['linkcolor'] = 'Color de l\'enllaç';
 $string['linkcolordesc'] = 'Configura el color dels enllaços al tema, utilitza codi html hex.';
-$string['linkhover'] = 'Color del menú al mantenir-se damunt';
-$string['linkhoverdesc'] = 'Configura el color del menú al mantenir-se damunt al tema, utilitza codi html hex.';
+$string['linkhover'] = 'Color del menú en mantenir-se damunt';
+$string['linkhoverdesc'] = 'Configura el color del menú en mantenir-se damunt del tema, utilitza codi html hex.';
 $string['pluginname'] = 'Nimble';
 $string['region-side-post'] = 'Dret';
 $string['region-side-pre'] = 'Esquerra';

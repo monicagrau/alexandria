@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'magtest', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'magtest', language 'ca', branch 'MOODLE_25_STABLE'
  *
  * @package   magtest
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -25,4 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['description'] = 'Descripció';
 $string['magtest:multipleattempts'] = 'Fes múltiples intents';
+$string['outputgroupdesc'] = 'Descripció del grup generat';

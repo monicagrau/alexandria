@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'resource', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'resource', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   resource
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -93,14 +93,14 @@ $string['popupresource'] = 'Aquest recurs ha d\'aparèixer en una finestra emerg
 $string['popupresourcelink'] = 'Si no, feu clic aquí: {$a}';
 $string['popupwidth'] = 'Amplària de la finestra emergent (en píxels)';
 $string['popupwidthexplain'] = 'Especifica l\'amplària per defecte de les finestres emergents.';
-$string['printheading'] = 'Mostra el nom del recurs';
-$string['printheadingexplain'] = 'Voleu mostrar la descripció del recurs per sobre del contingut? Algunes pàgines no mostren la descripció malgrat estigui activat.';
 $string['printintro'] = 'Mostra la descripció del recurs';
 $string['printintroexplain'] = 'Voleu mostrar la descripció del recurs per sota del contingut? Algunes pàgines no mostren la descripció malgrat estigui activat.';
 $string['resource:addinstance'] = 'Afegeix un recurs nou';
 $string['resourcecontent'] = 'Fitxers i subcarpetes';
 $string['resourcedetails_sizetype'] = '{$a->size} {$a->type}';
+$string['resource:exportresource'] = 'Exporta el recurs';
 $string['resource:view'] = 'Veure recurs';
+$string['selectmainfile'] = 'Seleccioneu el fitxer principal prement la icona a la vora del nom.';
 $string['showsize'] = 'Mostra la mida';
 $string['showsize_desc'] = 'Mostra la mida del fitxer en la pàgina principal del curs?';
 $string['showsize_help'] = 'Mostra la mida del fitxer, p.ex. \'3,1 MB\', junt a l\'enllaç al fitxer.

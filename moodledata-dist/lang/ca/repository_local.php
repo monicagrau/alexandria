@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'repository_local', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'repository_local', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   repository_local
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['configplugin'] = 'Configuració per al repositori del servidor de fitxers';
+$string['currentusefiles'] = 'Fitxers utilitzats actualment';
 $string['emptyfilelist'] = 'No hi ha fitxers per mostrar';
 $string['local:view'] = 'Mostra el repositori del servidor';
 $string['notitle'] = 'Sense títol';

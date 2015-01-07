@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'block_course_overview', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'block_course_overview', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   block_course_overview
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -30,21 +30,27 @@ $string['alwaysshowall'] = 'Mostra-ho sempre tot';
 $string['collapseall'] = 'Col·lapsa totes les llistes de cursos';
 $string['configotherexpanded'] = 'Si s\'habilita, el Altres Cursos s\'expandiran per defecte llevat que les preferències de l\'usuari assenyalin el contrari.';
 $string['configpreservestates'] = 'Si s\'habilita, els estats col·lapsats / expandits establerts per l\'usuari s\'emmagatzemaran i utilitzaran en cada càrrega.';
-$string['course_overview:addinstance'] = 'Afegeix un nou bloc de resum del curs';
-$string['course_overview:myaddinstance'] = 'Afegeix un nou bloc de resum del curs a la pàgina del «meu Moodle»';
+$string['course_overview:addinstance'] = 'Afegir un nou bloc de resum de cursos';
+$string['course_overview:myaddinstance'] = 'Afegir un nou bloc de resum de cursos a la pàgina "El meu Moodle"';
 $string['defaultmaxcourses'] = 'Nombre de cursos màxim per defecte';
-$string['defaultmaxcoursesdesc'] = 'El nombre màxim de cursos es mostrarà en el bloc de resum del curs. «0» mostrarà tots els cursos';
+$string['defaultmaxcoursesdesc'] = 'El nombre màxim de cursos que es mostraran en el bloc de resum de cursos. 0 farà que es mostrin tots els cursos';
 $string['expandall'] = 'Expandeix totes les llistes de cursos';
 $string['forcedefaultmaxcourses'] = 'Força el nombre màxim de cursos';
 $string['forcedefaultmaxcoursesdesc'] = 'Si s\'habilita, l\'usuari no podrà canviar aquest paràmetre personal';
 $string['hiddencoursecount'] = 'Teniu {$a} curs(os) ocult(s)';
 $string['hiddencoursecountplural'] = 'Teniu {$a} cursos ocults';
+$string['hiddencoursecountwithshowall'] = 'Teniu {$a->coursecount} cursos amagats ({$a->showalllink})';
+$string['hiddencoursecountwithshowallplural'] = 'Teniu {$a->coursecount} cursos amagats ({$a->showalllink})';
 $string['message'] = 'missatge';
 $string['messages'] = 'missatges';
+$string['moveafterhere'] = 'Mou el curs {$a->movingcoursename} després de {$a->currentcoursename}';
+$string['movecourse'] = 'Mou el curs: {$a}';
 $string['movecoursehere'] = 'Mou el curs aquí';
+$string['movetofirst'] = 'Mou el curs {$a} dalt';
+$string['movingcourse'] = 'Esteu movent: {$a->fullname} ({$a->cancellink})';
 $string['numtodisplay'] = 'Nombre de cursos a mostrar:';
 $string['otherexpanded'] = 'Altres Cursos expandits';
-$string['pluginname'] = 'Resum del curs';
+$string['pluginname'] = 'Resum de cursos';
 $string['preservestates'] = 'Preserva l\'estat expandit';
 $string['shortnameprefix'] = 'Inclou {$a}';
 $string['shortnamesufixprural'] = '(i {$a} altres )';

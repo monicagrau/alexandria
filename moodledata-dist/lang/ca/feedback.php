@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'feedback', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'feedback', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   feedback
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -26,10 +26,9 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['add_item'] = 'Afegeix una pregunta a l\'activitat';
-$string['add_items'] = 'Afegeix una pregunta a l\'activitat';
 $string['add_pagebreak'] = 'Afegeix un salt de pàgina';
 $string['adjustment'] = 'Paràmetre';
-$string['after_submit'] = 'Després de l\'enviament';
+$string['after_submit'] = 'Després de la tramesa';
 $string['allowfullanonymous'] = 'Habilita l\'anonimat complet';
 $string['analysis'] = 'Anàlisi';
 $string['anonymous'] = 'Anonimat';
@@ -37,7 +36,7 @@ $string['anonymous_edit'] = 'Enregistra els noms d\'usuari';
 $string['anonymous_entries'] = 'Entrades anònimes';
 $string['anonymous_user'] = 'Usuari anònim';
 $string['append_new_items'] = 'Afegeix elements nous';
-$string['autonumbering'] = 'Numeració automatitzada';
+$string['autonumbering'] = 'Numeració automàtica de les preguntes';
 $string['autonumbering_help'] = 'Habilita o deshabilita la numeració automatitzada per a cada pregunta';
 $string['average'] = 'Mitjana';
 $string['bold'] = 'Negreta';
@@ -56,7 +55,7 @@ $string['completed'] = 'completat';
 $string['completed_feedbacks'] = 'Respostes enviades';
 $string['complete_the_form'] = 'Responeu les preguntes...';
 $string['completionsubmit'] = 'Mostra com completada si s\'envia la realimentació';
-$string['configallowfullanonymous'] = 'Si habiliteu aquesta opció la realimentació podrà completar-se sense cap identificació prèvia en el servidor. Sols afecta a les realimentacions de la pàgina principal del servidor.';
+$string['configallowfullanonymous'] = 'Si habiliteu aquesta opció, els usuaris podran completar una activitat de retroacció a la pàgina principal sense necessitat d\'iniciar sessió.';
 $string['confirmdeleteentry'] = 'Esteu segurs de voler suprimir aquesta entrada?';
 $string['confirmdeleteitem'] = 'Esteu segurs de voler suprimir aquest element?';
 $string['confirmdeletetemplate'] = 'Esteu segurs de voler suprimir aquesta plantilla?';
@@ -99,21 +98,24 @@ $string['dropdown_values'] = 'Respostes';
 $string['drop_feedback'] = 'Suprimeix d\'aquest curs';
 $string['edit_item'] = 'Edita la pregunta';
 $string['edit_items'] = 'Edita les preguntes';
-$string['emailnotification'] = 'notificacions per correu electrònic';
-$string['email_notification'] = 'Envia notificacions per correu electrònic';
-$string['emailnotification_help'] = 'Si s\'habilita, els administradors rebran un correu electrònic amb les realimentacions enviades';
+$string['email_notification'] = 'Habilita la notificació de les trameses';
+$string['email_notification_help'] = 'Si s\'habilita aquesta opció, el professorat rebrà notificació de les trameses de retroaccions';
 $string['emailteachermail'] = '{$a->username} ha completat l\'activitat de realimentació: \'{$a->feedback}\'
 
 Podeu veure-la aquí:
 
 {$a->url}';
-$string['emailteachermailhtml'] = '{$a->username} ha completat l\'activitat de realimentació: <i>\'{$a->feedback}\'</i><br /><br /> Podeu veure-la <a href="{$a->url}">aquí</a>.';
+$string['emailteachermailhtml'] = '<p>{$a->username} ha completat l\'activitat de retroacció: <i>\'{$a->feedback}\'</i></p>
+<p>La podeu veure <a href="{$a->url}">al web.</a>.</p>';
 $string['entries_saved'] = 'Les vostres respostes s\'han desat.';
+$string['eventcoursemoduleviewed'] = 'S\'ha visualitzat el mòdul del curs';
+$string['eventinstanceslistviewed'] = 'S\'ha visualitzat la llista d\'instàncies';
+$string['eventresponsedeleted'] = 'S\'ha suprimit la resposta';
+$string['eventresponsesubmitted'] = 'S\'ha enviat la resposta';
 $string['export_questions'] = 'Exporta les preguntes';
 $string['export_to_excel'] = 'Exporta a Excel';
 $string['feedback:addinstance'] = 'Afegeix una Realimentació nova';
-$string['feedbackclose'] = 'Tanca la realimentació a';
-$string['feedbackcloses'] = 'La realimentació es tanca';
+$string['feedbackclose'] = 'Permet les respostes a';
 $string['feedback:complete'] = 'Completa la realimentació';
 $string['feedback:createprivatetemplate'] = 'Crea una plantilla privada';
 $string['feedback:createpublictemplate'] = 'Crea una plantilla pública';
@@ -123,9 +125,7 @@ $string['feedback:edititems'] = 'Edita els elements';
 $string['feedback_is_not_for_anonymous'] = 'aquesta realimentació no és per a usuaris anònims';
 $string['feedback_is_not_open'] = 'La realimentació no està oberta';
 $string['feedback:mapcourse'] = 'Fes els mapes dels cursos a realimentació global';
-$string['feedbackopen'] = 'Obri la realimentació a';
-$string['feedbackopens'] = 'La realimentació s\'obri';
-$string['feedback_options'] = 'Opcions per a la realimentació';
+$string['feedbackopen'] = 'Permet les respostes de';
 $string['feedback:receivemail'] = 'Rep notificacions per correu electrònic';
 $string['feedback:view'] = 'Mostra la realimentació';
 $string['feedback:viewanalysepage'] = 'Mostra la pàgina d\'anàlisi després de l\'enviament';
@@ -146,7 +146,6 @@ $string['insufficient_responses_help'] = 'No hi ha prou respostes per a aquest g
 Per mantindre la realimentació anònima, cal un mínim de 2 respostes.';
 $string['item_label'] = 'Etiqueta';
 $string['item_name'] = 'Pregunta';
-$string['items_are_required'] = 'Calen respostes per les preguntes';
 $string['label'] = 'Etiqueta';
 $string['line_values'] = 'Valoració';
 $string['mapcourse'] = 'Fes el mapa de les re-alimentacions dels cursos';
@@ -156,6 +155,7 @@ $string['mapcoursenone'] = 'No hi ha cursos mapejats. La realimentació és disp
 $string['mapcourses'] = 'Fes el mapatge de la realimentació dels cursos.';
 $string['mapcourses_help'] = 'Una vegada heu triat els cursos relevants de la vostra cerca, podeu associar-los amb aquesta realimentació utilitzant els mapes de curs. Podeu seleccionar múltiples cursos prement la tecla Apple o Ctrl mentre feu clic sobre els noms del cursos. Un curs pot deixar d\'estar associat a una realimentació en qualsevol moment.';
 $string['mappedcourses'] = 'Cursos mapejats';
+$string['max_args_exceeded'] = 'Es poden gestionar com a màxim sis arguments. Massa arguments per a';
 $string['maximal'] = 'màxim';
 $string['messageprovider:message'] = 'Recordatori de la realimentació';
 $string['messageprovider:submission'] = 'Notificacions de la realimentació';
@@ -180,12 +180,12 @@ $string['multichoice'] = 'Opcions múltiples';
 $string['multichoicerated'] = 'Opcions múltiples (puntuades)';
 $string['multichoicetype'] = 'Tipus d\'opcions múltiples';
 $string['multichoice_values'] = 'Valors de les opcions múltiples';
-$string['multiplesubmit'] = 'Enviaments múltiples';
-$string['multiple_submit'] = 'Enviaments múltiples';
+$string['multiplesubmit'] = 'Permet trameses múltiples';
 $string['multiplesubmit_help'] = 'Si s\'habilita per a enquestes anònimes, els usuaris podran enviar la realimentació una quantitat de vegades il·limitada.';
 $string['name'] = 'Nom';
 $string['name_required'] = 'Nom (obligatori)';
 $string['next_page'] = 'Pàgina següent';
+$string['no_handler'] = 'No existeix un gestor d\'acció per a';
 $string['no_itemlabel'] = 'Sense etiqueta';
 $string['no_itemname'] = 'Element sense nom';
 $string['no_items_available_yet'] = 'Encara no s\'han definit preguntes';
@@ -206,11 +206,13 @@ $string['oldvalueswillbedeleted'] = 'Les preguntes actuals i totes les respostes
 $string['only_one_captcha_allowed'] = 'Sols es permet un test de Turing en la realimentació';
 $string['overview'] = 'Descripció';
 $string['page'] = 'Pàgina';
-$string['page_after_submit'] = 'Pàgina després de l\'enviament';
+$string['page_after_submit'] = 'Missatge de compleció';
 $string['pagebreak'] = 'Salt de pàgina';
 $string['page-mod-feedback-x'] = 'Qualsevol pàgina de mòduls de realimentació';
 $string['parameters_missing'] = 'Paràmetres perduts a';
 $string['picture'] = 'Imatge';
+$string['picture_file_list'] = 'Llista d\'imatges';
+$string['picture_values'] = 'Tria un o més <br /> fitxers d\'imatge de la llista:';
 $string['pluginadministration'] = 'Gestió de la realimentació';
 $string['pluginname'] = 'Realimentació';
 $string['position'] = 'Posició';
@@ -219,10 +221,14 @@ $string['preview_help'] = 'En la vista prèvia podeu canviar l\'ordre de les pre
 $string['previous_page'] = 'Pàgina anterior';
 $string['public'] = 'Públic';
 $string['question'] = 'Pregunta';
+$string['questionandsubmission'] = 'Paràmetres de la pregunta i de la tramesa.';
 $string['questions'] = 'Preguntes';
 $string['radio'] = 'Opcions múltiples - una resposta';
 $string['radiobutton'] = 'Opcions múltiples - una resposta permesa (botons d\'opció)';
+$string['radiobutton_rated'] = 'Botó d\'acció';
 $string['radiorated'] = 'Botons d\'opció (ordenats)';
+$string['radio_values'] = 'Respostes';
+$string['ready_feedbacks'] = 'Retroaccions llestes';
 $string['relateditemsdeleted'] = 'Totes les respostes dels usuaris es suprimiran per a aquesta pregunta.';
 $string['required'] = 'Requerit';
 $string['resetting_data'] = 'Reinicia la realimentació de les respostes';
@@ -239,12 +245,13 @@ $string['saving_failed_because_missing_or_false_values'] = 'No s\'ha pogut desar
 $string['search_course'] = 'Cerca curs';
 $string['searchcourses'] = 'Cerca cursos';
 $string['searchcourses_help'] = 'Cerca el codi o el nom dels cursos que voleu associar amb aquesta realimentació.';
+$string['selected_dump'] = 'A continuació es llisten els índexs seleccionats de la variable $SESSION:';
 $string['send'] = 'envia';
 $string['send_message'] = 'envia missatge';
 $string['separator_decimal'] = ',';
 $string['separator_thousand'] = '.';
 $string['show_all'] = 'Mostra tot';
-$string['show_analysepage_after_submit'] = 'Mostra l\'anàlisi de la pàgina després de l\'enviament';
+$string['show_analysepage_after_submit'] = 'Mostra la pàgina d\'anàlisi';
 $string['show_entries'] = 'Mostra les respostes';
 $string['show_entry'] = 'Mostra la resposta';
 $string['show_nonrespondents'] = 'Mostra els que no han respost';
@@ -268,15 +275,10 @@ $string['textfield_maxlength'] = 'Nombre màxim de caràcters acceptats';
 $string['textfield_size'] = 'Amplària del camp del text';
 $string['there_are_no_settings_for_recaptcha'] = 'No hi han paràmetres per al test de Turing';
 $string['this_feedback_is_already_submitted'] = 'Heu completat aquesta activitat';
-$string['timeclose'] = 'Temps per tancar';
-$string['timeclose_help'] = 'Podeu especificar el temps en el qual la realimentació estarà accessible a l\'estudiantat per respondre a les preguntes. Si la casella de selecció no està marcada no hi ha un límit definit.';
-$string['timeopen'] = 'Temps per obrir';
-$string['timeopen_help'] = 'Podeu especificar el temps en el qual la realimentació estarà accessible a l\'estudiantat per respondre a les preguntes. Si la casella de selecció no està marcada no hi ha un límit definit.';
 $string['typemissing'] = 'valor perdut "tipus"';
 $string['update_item'] = 'Desa els canvis de la pregunta';
-$string['url_for_continue'] = 'URL per al botó-següent';
-$string['url_for_continue_button'] = 'URL per al botó-següent';
-$string['url_for_continue_help'] = 'Per defecte després que una realimentació ha sigut enviada l\'objectiu del botó-següent és la pàgina del curs. Podeu definir aquí una altra URL per aquest botó-següent.';
+$string['url_for_continue'] = 'Enllaç de l\'activitat següent';
+$string['url_for_continue_help'] = 'Després de trametre la retroacció, es mostra un botó per a continuar amb un enllaç a la pàgina del curs. Alternativament, l\'enllaç pot conduir a l\'activitat següent si s\'introdueix aquí l\'URL d\'aquesta activitat.';
 $string['use_one_line_for_each_value'] = '<br />Usa una línia per cada resposta!';
 $string['use_this_template'] = 'Utilitza aquesta plantilla';
 $string['using_templates'] = 'Utilitza una plantilla';

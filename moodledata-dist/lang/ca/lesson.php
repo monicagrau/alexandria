@@ -16,7 +16,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'lesson', language 'ca', branch 'MOODLE_24_STABLE'
+ * Strings for component 'lesson', language 'ca', branch 'MOODLE_26_STABLE'
  *
  * @package   lesson
  * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
@@ -33,7 +33,7 @@ $string['actionaftercorrectanswer_help'] = 'Després de respondre correctament u
 * Mostra una pàgina no vista - Les pàgines es mostren en un ordre aleatori sense mostrar la mateixa pàgina  dues vegades.
 * Mostra una pàgina sense contestar - Les pàgines es mostren aleatòriament i es tornen a mostrar les pàgines que contenen preguntes encara no respostes.';
 $string['actions'] = 'Accions';
-$string['activitylink'] = 'Enllaça a una activitat';
+$string['activitylink'] = 'Enllaça a la següent activitat';
 $string['activitylink_help'] = '<p>El menú desplegable conté totes les activitats d\'aquest curs. Si en seleccioneu una, al final de la lliçó apareixerà un enllaç a aquesta activitat. </p>';
 $string['activitylinkname'] = 'Vés a: {$a}';
 $string['activityoverview'] = 'Teniu lliçons pendents.';
@@ -119,6 +119,7 @@ $string['continuetonextpage'] = 'Continua a la pàgina següent';
 $string['correctanswerjump'] = 'Salt de resposta correcta';
 $string['correctanswerscore'] = 'Puntuació de resposta correcta';
 $string['correctresponse'] = 'Resposta correcta';
+$string['createaquestionpage'] = 'Crea una pàgina de preguntes';
 $string['credit'] = 'Crèdit';
 $string['customscoring'] = 'Puntuació personalitzada';
 $string['customscoring_help'] = '<p>Aquesta opció us permetrà puntuar cada resposta amb un valor numèric. Les respostes poden tenir valors negatius o positius. A les preguntes importades se\'ls assignarà automàticament un punt per a les respostes correctes i zero per a les incorrectes, però podeu modificar aquests valors després de la importació. </p>';
@@ -345,12 +346,13 @@ $string['postsuccess'] = 'Missatge enviat correctament';
 $string['practice'] = 'Lliçó de pràctica';
 $string['practice_help'] = 'Una lliçó de pràctica no té reflex en el llibre de qualificacions';
 $string['preprocesserror'] = 'S\'ha produït un error durant el preprocessament';
+$string['prerequisitelesson'] = 'Prerequisits de la lliçó';
 $string['preview'] = 'Previsualització';
 $string['previewlesson'] = 'Previsualitza {$a}';
 $string['previouspage'] = 'Pàgina anterior';
 $string['processerror'] = 'S\'ha produït un error durant el processament';
 $string['progressbar'] = 'Barra de progrés.';
-$string['progressbar_help'] = 'Si està activada, es mostra una barra  a la part inferior de les pàgines de la lliçó que indica el percentatge aproximat de la seva finalització.';
+$string['progressbar_help'] = 'Si està activada, es mostra una barra a la part inferior de les pàgines de la lliçó que indica el percentatge aproximat de la seva compleció.';
 $string['progressbarteacherwarning'] = 'La barra de progrés no es visualitza per a {$a}';
 $string['progressbarteacherwarning2'] = 'No veureu la barra de progrés, ja que teniu permís per modificar aquesta lliçó';
 $string['progresscompleted'] = 'Heu completat el {$a}%  de la lliçó.';
@@ -380,6 +382,7 @@ $string['savechanges'] = 'Desa els canvis';
 $string['savechangesandeol'] = 'Desa tots els canvis i ves al final de la lliçó.';
 $string['savepage'] = 'Desa la pàgina';
 $string['score'] = 'Puntuació';
+$string['score_help'] = 'La puntuació sols s\'usa quan s\'ha habilitat la puntuació personalitzada. Cada pregunta pot tenir un valor numèric (positiu o negatiu).';
 $string['scores'] = 'Puntuacions';
 $string['secondpluswrong'] = 'Incorrecte de nou. Voleu tornar-ho a provar?';
 $string['selectaqtype'] = 'Seleccioneu un tipus de pregunta';
@@ -407,6 +410,7 @@ $string['thatsthecorrectanswer'] = 'Aquesta és la resposta correcta';
 $string['thatsthewronganswer'] = 'Aquesta resposta és errònia';
 $string['thefollowingpagesjumptothispage'] = 'Les pàgines següents salten a aquesta pàgina';
 $string['thispage'] = 'Aquesta pàgina';
+$string['timeisup'] = 'S\'ha acabat el temps';
 $string['timeremaining'] = 'Temps restant';
 $string['timespenterror'] = 'Heu de dedicar almenys {$a} minuts en la lliçó';
 $string['timespentminutes'] = 'Temps dedicat (minuts).';
